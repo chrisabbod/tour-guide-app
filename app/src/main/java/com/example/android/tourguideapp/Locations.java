@@ -8,4 +8,20 @@ public class Locations {
     Locations(String locationName){
         mLocationName = locationName;
     }
+
+    public String getLocationName() {
+        return mLocationName;
+    }
+
+    public void setLocationName(String mLocationName) {
+        this.mLocationName = mLocationName;
+    }
+
+    public int getImageResource() {
+        return mImageResource;
+    }
+
+    public void setImageResource(int mImageResource) {
+        this.mImageResource = mImageResource;
+    }
 }
