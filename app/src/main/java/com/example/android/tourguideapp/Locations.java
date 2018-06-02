@@ -9,6 +9,11 @@ public class Locations {
         mLocationName = locationName;
     }
 
+    Locations(String locationName, int imageResource){
+        mLocationName = locationName;
+        mImageResource = imageResource;
+    }
+
     public String getLocationName() {
         return mLocationName;
     }
