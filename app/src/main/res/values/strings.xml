@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">TourGuideApp</string>
+    <string name="app_name">Tour Detroit</string>
+
+    <!-- Drawer Items -->
+    <string name="popular_places">Popular Places</string>
+    <string name="hotels">Hotels</string>
+    <string name="museums">Museums</string>
+    <string name="parks">Parks</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="theaters">Theaters</string>
+
 </resources>

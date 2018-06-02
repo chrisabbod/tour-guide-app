@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/popular_places_item"
+            android:icon="@drawable/ic_popular_name"
+            android:title="@string/popular_places" />
+        <item
+            android:id="@+id/hotels_item"
+            android:icon="@drawable/ic_hotel_name"
+            android:title="@string/hotels" />
+        <item
+            android:id="@+id/museums_item"
+            android:icon="@drawable/ic_museum_name"
+            android:title="@string/museums" />
+        <item
+            android:id="@+id/parks_item"
+            android:icon="@drawable/ic_park_name"
+            android:title="@string/parks" />
+        <item
+            android:id="@+id/restaurants_item"
+            android:icon="@drawable/ic_restaurant_name"
+            android:title="@string/restaurants" />
+        <item
+            android:id="@+id/theaters_item"
+            android:icon="@drawable/ic_theater_name"
+            android:title="@string/theaters" />
+    </group>
+</menu>
