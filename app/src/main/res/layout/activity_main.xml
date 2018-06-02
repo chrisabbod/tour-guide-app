@@ -10,16 +10,11 @@
 
     <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
     <LinearLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".MainActivity">
-
-        <TextView
-            android:text="MAIN ACTIVITY"
-            android:layout_gravity="center_vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
 
     </LinearLayout>
 

@@ -39,7 +39,7 @@ public class PopularPlacesFragment extends Fragment {
         locations.add(new Locations("Greektown", R.drawable.greektown));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
-        final ListView listView = (ListView)rootView.findViewById(R.id.list);
+        ListView listView = (ListView)rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
