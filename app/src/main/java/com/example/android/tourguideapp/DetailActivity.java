@@ -21,12 +21,12 @@ public class DetailActivity extends AppCompatActivity {
             if(extras == null){
                 stringExtra = null;
             }else{
-                stringExtra = extras.getString("string_index");
-                intExtra = extras.getInt("int_index");
+                stringExtra = extras.getString("string_title_index");
+                intExtra = extras.getInt("image_resource_index");
             }
         }else{
-            stringExtra = (String)savedInstanceState.getSerializable("string_index");  //Retrieves string extra after screen rotation
-            intExtra = savedInstanceState.getInt("index");
+            stringExtra = (String)savedInstanceState.getSerializable("string_title_index");  //Retrieves string extra after screen rotation
+            intExtra = savedInstanceState.getInt("image_resource_index");
         }//TODO: Keep information across rotation
 
         ImageView detailImageView = (ImageView)findViewById(R.id.detail_image_view);
@@ -34,6 +34,5 @@ public class DetailActivity extends AppCompatActivity {
 
         detailImageView.setImageResource(intExtra);
         detailTextView.setText(stringExtra);
-        //Toast.makeText(DetailActivity.this, intExtra, Toast.LENGTH_SHORT).show();
     }
 }
