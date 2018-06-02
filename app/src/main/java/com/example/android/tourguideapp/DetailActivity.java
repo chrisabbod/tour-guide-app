@@ -6,7 +6,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class PopularPlaceActivity extends AppCompatActivity {
+public class DetailActivity extends AppCompatActivity {
     private String stringExtra;
     private int intExtra;
 
@@ -26,7 +26,7 @@ public class PopularPlaceActivity extends AppCompatActivity {
             }
         }else{
             stringExtra = (String)savedInstanceState.getSerializable("string_index");  //Retrieves string extra after screen rotation
-            intExtra = savedInstanceState.getInt("int_index");
+            intExtra = savedInstanceState.getInt("index");
         }//TODO: Keep information across rotation
 
         ImageView detailImageView = (ImageView)findViewById(R.id.detail_image_view);
@@ -34,6 +34,6 @@ public class PopularPlaceActivity extends AppCompatActivity {
 
         detailImageView.setImageResource(intExtra);
         detailTextView.setText(stringExtra);
-        //Toast.makeText(PopularPlaceActivity.this, intExtra, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(DetailActivity.this, intExtra, Toast.LENGTH_SHORT).show();
     }
 }
