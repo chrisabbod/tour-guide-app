@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container, new HotelsFragment())
+                .replace(R.id.container, new PopularPlacesFragment())
                 .commit();
 
         //Implement drawer navigation to allow user to click drawer items to move to different activities
@@ -57,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
                         fragment = new HotelsFragment();
                         break;
                     case R.id.museums_item:
-                        Toast.makeText(MainActivity.this, "Clicked Museums!", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MainActivity.this, "Clicked Museums!", Toast.LENGTH_SHORT).show();
+                        fragment = new MuseumsFragment();
                         break;
                     case R.id.parks_item:
                         Toast.makeText(MainActivity.this, "Clicked Parks!", Toast.LENGTH_SHORT).show();
