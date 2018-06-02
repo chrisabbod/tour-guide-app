@@ -12,7 +12,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String KEY_INDEX = "index";
+    private static final String STRING_KEY = "string_index";
+    private static final String INT_KEY = "int_index";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Intent intent = new Intent(MainActivity.this, PopularPlaceActivity.class);
-                intent.putExtra(KEY_INDEX, locations.get(position).getLocationName());  //Retrieve location title from selected item and pass to detail activity
-                intent.putExtra(KEY_INDEX, locations.get(position).getImageResource()); //Pass image resource to detail activity so image can be displayed//Toast.makeText(MainActivity.this, locations.get(position).getImageResource(), Toast.LENGTH_SHORT).show();
+                intent.putExtra(STRING_KEY, locations.get(position).getLocationName());  //Retrieve location title from selected item and pass to detail activity
+                intent.putExtra(INT_KEY, locations.get(position).getImageResource()); //Pass image resource to detail activity so image can be displayed//Toast.makeText(MainActivity.this, locations.get(position).getImageResource(), Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
         });

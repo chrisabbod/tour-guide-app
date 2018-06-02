@@ -21,12 +21,13 @@ public class PopularPlaceActivity extends AppCompatActivity {
             if(extras == null){
                 stringExtra = null;
             }else{
-                stringExtra = extras.getString("index");
-                intExtra = extras.getInt("index");
+                stringExtra = extras.getString("string_index");
+                intExtra = extras.getInt("int_index");
             }
         }else{
-            stringExtra = (String)savedInstanceState.getSerializable("index");  //Retrieves string extra after screen rotation
-        }
+            stringExtra = (String)savedInstanceState.getSerializable("string_index");  //Retrieves string extra after screen rotation
+            intExtra = savedInstanceState.getInt("int_index");
+        }//TODO: Keep information across rotation
 
         ImageView detailImageView = (ImageView)findViewById(R.id.detail_image_view);
         TextView detailTextView = (TextView)findViewById(R.id.detail_text_view);
