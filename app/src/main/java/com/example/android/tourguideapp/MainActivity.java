@@ -9,13 +9,13 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
         //Implement drawer navigation to allow user to click drawer items to move to different activities
         mDrawerLayout = findViewById(R.id.drawer_layout);
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         final NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -47,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 int id = item.getItemId();
                 Fragment fragment = null;
 
+                //Switch to fragment chosen by user in nav drawer
                 switch(id){
                     case R.id.popular_places_item:
                         fragment = new PopularPlacesFragment();
