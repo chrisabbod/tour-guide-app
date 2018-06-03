@@ -27,7 +27,11 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
 //                .replace(R.id.detail_fragment_container, new DetailFragment())
 //                .commit();
 
-        initMap();
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.detail_fragment_container, new com.example.android.tourguideapp.MapFragment())
+                .commit();
+
+        //initMap();
     }
 
     //Initialize and inflate map fragment
