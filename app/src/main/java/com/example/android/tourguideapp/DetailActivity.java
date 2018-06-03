@@ -40,8 +40,8 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
     @Override
     public void onMapReady(GoogleMap map){
         LatLng latLng = new LatLng(42.358750,-82.929737);
-        map.animateCamera(CameraUpdateFactory.newLatLng(latLng));
-        map.addMarker(new MarkerOptions().position(latLng).title("Raj Amal"));
+        map.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12.0f));
+        map.addMarker(new MarkerOptions().position(latLng).title("TEST"));  //TODO: Make Marker give correct name
         map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
     }
 }
