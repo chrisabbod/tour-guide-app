@@ -6,11 +6,13 @@
         <item name="colorPrimary">#005A8B</item>
         <item name="colorPrimaryDark">#B0B7BC</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="titleTextColor">@android:color/white</item>
     </style>
 
     <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">#005A8B</item>
         <item name="colorPrimaryDark">#B0B7BC</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="titleTextColor">@android:color/white</item>
     </style>
 </resources>
