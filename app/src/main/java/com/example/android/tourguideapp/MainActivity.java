@@ -49,26 +49,22 @@ public class MainActivity extends AppCompatActivity {
 
                 switch(id){
                     case R.id.popular_places_item:
-                        //Toast.makeText(MainActivity.this, "Clicked Popular Places!", Toast.LENGTH_SHORT).show();
                         fragment = new PopularPlacesFragment();
                         break;
                     case R.id.hotels_item:
-                        //Toast.makeText(MainActivity.this, "Clicked Hotels!", Toast.LENGTH_SHORT).show();
                         fragment = new HotelsFragment();
                         break;
                     case R.id.museums_item:
-                        //Toast.makeText(MainActivity.this, "Clicked Museums!", Toast.LENGTH_SHORT).show();
                         fragment = new MuseumsFragment();
                         break;
                     case R.id.parks_item:
-                        Toast.makeText(MainActivity.this, "Clicked Parks!", Toast.LENGTH_SHORT).show();
+                        fragment = new ParksFragment();
                         break;
                     case R.id.restaurants_item:
-                        Toast.makeText(MainActivity.this, "Clicked Restaurants!", Toast.LENGTH_SHORT).show();
                         fragment = new RestaurantsFragment();
                         break;
                     default:
-                        Toast.makeText(MainActivity.this, "Clicked Theaters!", Toast.LENGTH_SHORT).show();
+                        fragment = new TheatersFragment();
                         break;
                 }
 
