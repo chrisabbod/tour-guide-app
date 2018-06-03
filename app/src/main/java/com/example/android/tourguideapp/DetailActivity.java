@@ -30,16 +30,18 @@ public class DetailActivity extends AppCompatActivity implements OnMapReadyCallb
         initMap();
     }
 
+    //Initialize and inflate map fragment
     private void initMap(){
         MapFragment mapFragment = (MapFragment)getFragmentManager().findFragmentById(R.id.detail_fragment_container);
         mapFragment.getMapAsync(this);
     }
 
+    //When map fragment is ready apply marker and move to location
     @Override
     public void onMapReady(GoogleMap map){
-        LatLng latLng = new LatLng(13.05241, 80.25082);
+        LatLng latLng = new LatLng(42.358750,-82.929737);
         map.animateCamera(CameraUpdateFactory.newLatLng(latLng));
         map.addMarker(new MarkerOptions().position(latLng).title("Raj Amal"));
-        map.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
+        map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
     }
 }
