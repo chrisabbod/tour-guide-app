@@ -14,6 +14,7 @@ public class DetailActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail_activity);
 
+
         //Find the view pager that will allow the user to swipe between fragments
         ViewPager viewPager = (ViewPager)findViewById(R.id.viewpager);
 
@@ -32,14 +33,5 @@ public class DetailActivity extends AppCompatActivity{
         //   3. Set the tab layout's tab names with the view pager's adapter's titles
         //      by calling onPageTitle()
         tabLayout.setupWithViewPager(viewPager);
-
-//        getSupportFragmentManager().beginTransaction()
-//                .replace(R.id.detail_fragment_container, new DetailFragment())
-//                .commit();
-
-//        getSupportFragmentManager().beginTransaction()
-//                .replace(R.id.detail_fragment_container, new com.example.android.tourguideapp.MapFragment())
-//                .commit();
-
     }
 }

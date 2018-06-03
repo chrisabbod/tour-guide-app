@@ -42,6 +42,7 @@ public class DetailFragment extends Fragment {
             intExtra = savedInstanceState.getInt("image_resource_index");
         }//TODO: Keep information across rotation
 
+
         ImageView detailImageView = (ImageView) rootView.findViewById(R.id.detail_image_view);
         TextView detailTextView = (TextView)rootView.findViewById(R.id.detail_text_view);
 
@@ -49,6 +50,13 @@ public class DetailFragment extends Fragment {
         detailTextView.setText(stringExtra);
 
         return rootView;
+    }
+
+    public void onResume(){
+        super.onResume();
+
+        //Set title bar
+        (getActivity()).setTitle(stringExtra);
     }
 
 }
