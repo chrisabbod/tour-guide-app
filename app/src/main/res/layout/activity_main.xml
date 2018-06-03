@@ -42,7 +42,6 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header"
-        android:background="#B0B7BC"
         app:menu="@menu/drawer_view" />
 </android.support.v4.widget.DrawerLayout>
     <!-- TODO: Use card layout instead of listview-->
