@@ -1,14 +1,15 @@
 package com.example.android.tourguideapp;
 
-
+//import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMapOptions;
+import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -30,6 +31,9 @@ public class LocationFragment extends Fragment implements OnMapReadyCallback{
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_location, container, false);
+
+        MapFragment mapFragment = (MapFragment)getFragmentManager().findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
 
         //Set the initial state of the map
         GoogleMapOptions options = new GoogleMapOptions();
