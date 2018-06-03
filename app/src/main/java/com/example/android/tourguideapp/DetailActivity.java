@@ -14,7 +14,7 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail_activity);
-
+        //TODO: When returning to main activity go back to correct list (park, museum, etc.)
         //If there is no savedInstanceState (Because we just arrived at this activity from the main activity) retrieve the string extra
         if(savedInstanceState == null){
             Bundle extras = getIntent().getExtras();
