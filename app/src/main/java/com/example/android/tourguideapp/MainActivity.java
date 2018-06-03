@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.restaurants_item:
                         Toast.makeText(MainActivity.this, "Clicked Restaurants!", Toast.LENGTH_SHORT).show();
+                        fragment = new RestaurantsFragment();
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "Clicked Theaters!", Toast.LENGTH_SHORT).show();
