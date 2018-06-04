@@ -22,15 +22,14 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
+    private static int id = R.id.popular_places_item;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container, new PopularPlacesFragment())
-                .commit();
+        changeView(id);
 
         //Implement drawer navigation to allow user to click drawer items to move to different activities
         mDrawerLayout = findViewById(R.id.drawer_layout);
@@ -55,42 +54,48 @@ public class MainActivity extends AppCompatActivity {
                 mDrawerLayout.closeDrawers();
 
                 //Handle navigation view item clicks here
-                int id = item.getItemId();
-                Fragment fragment = null;
+                id = item.getItemId();
 
-                //Switch to fragment chosen by user in nav drawer
-                switch(id){
-                    case R.id.popular_places_item:
-                        fragment = new PopularPlacesFragment();
-                        break;
-                    case R.id.hotels_item:
-                        fragment = new HotelsFragment();
-                        break;
-                    case R.id.museums_item:
-                        fragment = new MuseumsFragment();
-                        break;
-                    case R.id.parks_item:
-                        fragment = new ParksFragment();
-                        break;
-                    case R.id.restaurants_item:
-                        fragment = new RestaurantsFragment();
-                        break;
-                    default:
-                        fragment = new TheatersFragment();
-                        break;
-                }
+                changeView(id);
 
-                FragmentManager fm = getSupportFragmentManager();
-
-                fm.beginTransaction()
-                        .replace(R.id.container, fragment)
-                        .addToBackStack(null)
-                        .commit();
-                //TODO: Fix issue with up button returning you to original activity instead of last activity
                 return false;
             }
         });
     }
+
+    public void changeView(int id){
+        //Switch to fragment chosen by user in nav drawer
+        Fragment fragment;
+        switch(id){
+            case R.id.popular_places_item:
+                fragment = new PopularPlacesFragment();
+                break;
+            case R.id.hotels_item:
+                fragment = new HotelsFragment();
+                break;
+            case R.id.museums_item:
+                fragment = new MuseumsFragment();
+                break;
+            case R.id.parks_item:
+                fragment = new ParksFragment();
+                break;
+            case R.id.restaurants_item:
+                fragment = new RestaurantsFragment();
+                break;
+            default:
+                fragment = new TheatersFragment();
+                break;
+        }
+
+        FragmentManager fm = getSupportFragmentManager();
+
+        fm.beginTransaction()
+                .replace(R.id.container, fragment)
+                //.addToBackStack(null)
+                .commit();
+    }
+
+
 
     //Open navigation drawer when menu button is selected in actionbar
     @Override
