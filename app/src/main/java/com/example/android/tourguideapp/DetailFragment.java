@@ -27,7 +27,7 @@ public class DetailFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_detail, container, false);
 
-        //TODO: When returning to main activity go back to correct list (park, museum, etc.)
+
         //If there is no savedInstanceState (Because we just arrived at this activity from the main activity) retrieve the string extra
         if(savedInstanceState == null){
             Bundle extras = getActivity().getIntent().getExtras();
@@ -44,9 +44,9 @@ public class DetailFragment extends Fragment {
                 intExtra = extras.getInt("image_resource_index");
             }
         }else{
-            stringExtraTitle = (String)savedInstanceState.getSerializable("string_title_index");  //Retrieves string extra after screen rotation
+            stringExtraTitle = (String)savedInstanceState.getSerializable("string_title_index");
             intExtra = savedInstanceState.getInt("image_resource_index");
-        }//TODO: Keep information across rotation
+        }
 
 
         ImageView detailImageView = rootView.findViewById(R.id.detail_image_view);
