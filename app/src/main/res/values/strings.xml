@@ -44,8 +44,8 @@
 
     <string name="greektown">Greektown</string>
     <string name="greektown_details">Greektown is a historic commercial and entertainment district in Detroit, Michigan, located just northeast of the heart of downtown, along Monroe Avenue between Brush and St. Antoine Streets with a station on the city\'s elevated downtown transit system known as the Detroit People Mover. Greektown is also situated between the Renaissance Center, Comerica Park, and Ford Field. The district is dominated by Greek-themed restaurants and includes St. Mary Roman Catholic Church, Second Baptist Church, the Athenium Suite Hotel, and the Greektown Casino-Hotel within its boundaries.</string>
-    <string name="greektown_address">Greektown</string>
-    <string name="greektown_number">Greektown, Detroit, MI</string>
+    <string name="greektown_address">Greektown, Detroit, MI</string>
+    <string name="greektown_number">No Number</string>
 
     <!-- Hotels -->
     <string name="aloft_hotel">Aloft Detroit at The David Whitney</string>

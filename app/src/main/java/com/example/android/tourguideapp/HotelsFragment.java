@@ -18,6 +18,9 @@ import java.util.ArrayList;
  */
 public class HotelsFragment extends Fragment {
     private static final String STRING_TITLE_KEY = "string_title_index";    //Key index used to pass location title to detail activity
+    private static final String STRING_DETAILS_KEY = "string_details_index";
+    private static final String STRING_ADDRESS_KEY = "string_address_index";
+    private static final String STRING_PHONE_KEY = "string_phone_index";
     private static final String IMAGE_RESOURCE_KEY = "image_resource_index";    //Key index used to pass location image resource file
 
     public HotelsFragment() {
@@ -51,6 +54,9 @@ public class HotelsFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Intent intent = new Intent(getActivity(), DetailActivity.class);
                 intent.putExtra(STRING_TITLE_KEY, locations.get(position).getLocationName());  //Retrieve location title from selected item and pass to detail activity
+                intent.putExtra(STRING_DETAILS_KEY, locations.get(position).getLocationDetails()); //Retrieve location details
+                intent.putExtra(STRING_ADDRESS_KEY, locations.get(position).getLocationAddress()); //Retrieve location address
+                intent.putExtra(STRING_PHONE_KEY, locations.get(position).getPhoneNumber()); //Retrieve location phone number
                 intent.putExtra(IMAGE_RESOURCE_KEY, locations.get(position).getImageResource()); //Pass image resource to detail activity so image can be displayed//Toast.makeText(MainActivity.this, locations.get(position).getImageResource(), Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
