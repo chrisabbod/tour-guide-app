@@ -32,12 +32,12 @@ public class MuseumsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         final ArrayList<Locations> locations = new ArrayList<>();
-        locations.add(new Locations("Detroit Institute of the Arts", R.drawable.detroit_institute_of_arts));
-        locations.add(new Locations("Henry Ford Museum", R.drawable.henry_ford_museum));
-        locations.add(new Locations("Greenfield Village", R.drawable.greenfield_village));
-        locations.add(new Locations("Motown Museum", R.drawable.motown_museum));
-        locations.add(new Locations("Detroit Historical Museum", R.drawable.detroit_historical_museum));
-        locations.add(new Locations("Charles H. Wright Museum of African American History", R.drawable.museum_of_african_american_history));
+        locations.add(new Locations(getString(R.string.detroit_institute_of_arts), R.drawable.detroit_institute_of_arts));
+        locations.add(new Locations(getString(R.string.henry_ford_museum), R.drawable.henry_ford_museum));
+        locations.add(new Locations(getString(R.string.greenfield_village), R.drawable.greenfield_village));
+        locations.add(new Locations(getString(R.string.motown_museum), R.drawable.motown_museum));
+        locations.add(new Locations(getString(R.string.detroit_historical_museum), R.drawable.detroit_historical_museum));
+        locations.add(new Locations(getString(R.string.african_american_history_museum), R.drawable.museum_of_african_american_history));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
         final ListView listView = (ListView)rootView.findViewById(R.id.list);
