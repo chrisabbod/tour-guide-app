@@ -32,15 +32,15 @@ public class HotelsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         final ArrayList<Locations> locations = new ArrayList<>();
-        locations.add(new Locations("Aloft Detroit at The David Whitney", R.drawable.aloft_detroit));
-        locations.add(new Locations("MGM Grand Detroit", R.drawable.mgm_grand_hotel));
-        locations.add(new Locations("Westin Book Cadillac Hotel", R.drawable.westin_book_cadillac));
-        locations.add(new Locations("The Inn on Ferry Street", R.drawable.inn_on_ferry_street));
-        locations.add(new Locations("Crowne Plaza Hotel", R.drawable.crown_plaza_hotel));
-        locations.add(new Locations("DoubleTree Suites", R.drawable.double_tree_suites));
-        locations.add(new Locations("Holiday Inn Express & Suites Detroit Downtown", R.drawable.holiday_inn_express));
-        locations.add(new Locations("Red Roof Inn Detroit", R.drawable.red_roof_inn));
-        locations.add(new Locations("Comfort Inn Near Greenfield Village", R.drawable.comfort_inn_greenfield));
+        locations.add(new Locations(getString(R.string.aloft_hotel), R.drawable.aloft_detroit));
+        locations.add(new Locations(getString(R.string.mgm_grand_hotel), R.drawable.mgm_grand_hotel));
+        locations.add(new Locations(getString(R.string.westin_hotel), R.drawable.westin_book_cadillac));
+        locations.add(new Locations(getString(R.string.inn_on_ferry_street), R.drawable.inn_on_ferry_street));
+        locations.add(new Locations(getString(R.string.crowne_plaza_hotel), R.drawable.crowne_plaza_hotel));
+        locations.add(new Locations(getString(R.string.doubletree_suites), R.drawable.double_tree_suites));
+        locations.add(new Locations(getString(R.string.holiday_inn), R.drawable.holiday_inn_express));
+        locations.add(new Locations(getString(R.string.red_roof_inn), R.drawable.red_roof_inn));
+        locations.add(new Locations(getString(R.string.comfort_inn), R.drawable.comfort_inn_greenfield));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
         final ListView listView = (ListView)rootView.findViewById(R.id.list);
