@@ -19,7 +19,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
  * A simple {@link Fragment} subclass.
  */
 public class MapFragment extends Fragment implements OnMapReadyCallback{
-
+    private String stringExtra;
 
     public MapFragment() {
         // Required empty public constructor
@@ -31,6 +31,19 @@ public class MapFragment extends Fragment implements OnMapReadyCallback{
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_map, container, false);
+
+        //TODO: When returning to main activity go back to correct list (park, museum, etc.)
+        //If there is no savedInstanceState (Because we just arrived at this activity from the main activity) retrieve the string extra
+        if(savedInstanceState == null){
+            Bundle extras = getActivity().getIntent().getExtras();
+            if(extras == null){
+                stringExtra = null;
+            }else{
+                stringExtra = extras.getString("string_title_index");
+            }
+        }else{
+            stringExtra = (String)savedInstanceState.getSerializable("string_title_index");  //Retrieves string extra after screen rotation
+        }//TODO: Keep information across rotation
 
         initMap();
 
@@ -46,7 +59,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback{
     public void onMapReady(GoogleMap map){
         LatLng latLng = new LatLng(42.358750,-82.929737);
         map.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12.0f));
-        map.addMarker(new MarkerOptions().position(latLng).title("TEST"));  //TODO: Make Marker give correct name
+        map.addMarker(new MarkerOptions().position(latLng).title(stringExtra));  //TODO: Make Marker give correct name
         map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
     }
 }
