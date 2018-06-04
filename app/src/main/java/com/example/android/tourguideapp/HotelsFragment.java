@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -35,15 +36,24 @@ public class HotelsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         final ArrayList<Locations> locations = new ArrayList<>();
-        locations.add(new Locations(getString(R.string.aloft_hotel), R.drawable.aloft_detroit));
-        locations.add(new Locations(getString(R.string.mgm_grand_hotel), R.drawable.mgm_grand_hotel));
-        locations.add(new Locations(getString(R.string.westin_hotel), R.drawable.westin_book_cadillac));
-        locations.add(new Locations(getString(R.string.inn_on_ferry_street), R.drawable.inn_on_ferry_street));
-        locations.add(new Locations(getString(R.string.crowne_plaza_hotel), R.drawable.crowne_plaza_hotel));
-        locations.add(new Locations(getString(R.string.doubletree_suites), R.drawable.double_tree_suites));
-        locations.add(new Locations(getString(R.string.holiday_inn), R.drawable.holiday_inn_express));
-        locations.add(new Locations(getString(R.string.red_roof_inn), R.drawable.red_roof_inn));
-        locations.add(new Locations(getString(R.string.comfort_inn), R.drawable.comfort_inn_greenfield));
+        locations.add(new Locations(getString(R.string.aloft_hotel), getString(R.string.aloft_hotel_details), getString(R.string.aloft_hotel_address),
+                getString(R.string.aloft_hotel_number), R.drawable.aloft_detroit, 42.335616, -83.050527));
+        locations.add(new Locations(getString(R.string.mgm_grand_hotel), getString(R.string.mgm_grand_hotel_details), getString(R.string.mgm_grand_hotel_address),
+                getString(R.string.mgm_grand_hotel_number), R.drawable.mgm_grand_hotel, 42.333070, -83.059559));
+        locations.add(new Locations(getString(R.string.westin_hotel), getString(R.string.westin_hotel_details), getString(R.string.westin_hotel_address),
+                getString(R.string.westin_hotel_number), R.drawable.westin_book_cadillac, 42.331983, -83.050359));
+        locations.add(new Locations(getString(R.string.inn_on_ferry_street), getString(R.string.inn_on_ferry_street_details), getString(R.string.inn_on_ferry_street_address),
+                getString(R.string.inn_on_ferry_street_number), R.drawable.inn_on_ferry_street, 42.361500, -83.065600));
+        locations.add(new Locations(getString(R.string.crowne_plaza_hotel), getString(R.string.crowne_plaza_hotel_details), getString(R.string.crowne_plaza_hotel_address),
+                getString(R.string.crowne_plaza_hotel_number), R.drawable.crowne_plaza_hotel, 42.327908, -83.047800));
+        locations.add(new Locations(getString(R.string.doubletree_suites), getString(R.string.doubletree_suites_details), getString(R.string.doubletree_suites_address),
+                getString(R.string.doubletree_suites_number), R.drawable.double_tree_suites, 42.329135, -83.052834));
+        locations.add(new Locations(getString(R.string.holiday_inn), getString(R.string.holiday_inn_details), getString(R.string.holiday_inn_address),
+                getString(R.string.holiday_inn_number), R.drawable.holiday_inn_express, 42.331287, -83.050485));
+        locations.add(new Locations(getString(R.string.red_roof_inn), getString(R.string.red_roof_inn_details), getString(R.string.red_roof_inn_address),
+                getString(R.string.red_roof_inn_number), R.drawable.red_roof_inn, 42.300151, -83.273806));
+        locations.add(new Locations(getString(R.string.comfort_inn), getString(R.string.comfort_inn_details), getString(R.string.comfort_inn_address),
+                getString(R.string.comfort_inn_number), R.drawable.comfort_inn_greenfield, 42.307568, -83.231905));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
         final ListView listView = (ListView)rootView.findViewById(R.id.list);
@@ -64,5 +74,4 @@ public class HotelsFragment extends Fragment {
 
         return rootView;
     }
-
 }

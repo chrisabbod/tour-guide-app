@@ -49,15 +49,49 @@
 
     <!-- Hotels -->
     <string name="aloft_hotel">Aloft Detroit at The David Whitney</string>
-    <string name="mgm_grand_hotel">MGM Grand Detroit</string>
-    <string name="westin_hotel">Westin Book Cadillac Hotel</string>
-    <string name="inn_on_ferry_street">The Inn on Ferry Street</string>
-    <string name="crowne_plaza_hotel">Crowne Plaza Hotel</string>
-    <string name="doubletree_suites">DoubleTree Suites</string>
-    <string name="holiday_inn">Holiday Inn Express &amp; Suites Detroit Downtown</string>
-    <string name="red_roof_inn">Red Roof Inn Detroit</string>
-    <string name="comfort_inn">Comfort Inn Near Greenfield Village</string>
+    <string name="aloft_hotel_details">Aloft Hotels is a hotel chain based in North America, owned by Starwood Hotels &amp; Resorts Worldwide (which was acquired by Marriott International in October 2016), although it is referred to as "a vision of W Hotels". The first hotel opened at the Trudeau International Airport in Montreal in 2008.Aloft Hotels have since opened across North America and internationally.</string>
+    <string name="aloft_hotel_address">One, Park Ave, Detroit, MI 48226</string>
+    <string name="aloft_hotel_number">Phone: (313) 237-1700</string>
 
+    <string name="mgm_grand_hotel">MGM Grand Detroit</string>
+    <string name="mgm_grand_hotel_details">The MGM Grand Detroit is one of three casino resort hotels in Detroit, Michigan, and one of four in the Detroit–Windsor area. The luxury resort hotel opened on July 29, 1999, with a grand event which included models and celebrities including Ashanti, Kid Rock, and fireworks. It is the first luxury casino resort hotel in a major metropolis outside Las Vegas. Detroit is one of the largest American cities and metropolitan regions to offer casino resort hotels.</string>
+    <string name="mgm_grand_hotel_address">1777 3rd Ave, Detroit, MI 48226</string>
+    <string name="mgm_grand_hotel_number">Phone: (877) 888-2121</string>
+
+    <string name="westin_hotel">Westin Book Cadillac Hotel</string>
+    <string name="westin_hotel_details">The Westin Book Cadillac Detroit is a historic skyscraper hotel located at 1114 Washington Boulevard in Downtown Detroit, Michigan, within the Washington Boulevard Historic District. Designed in the Neo-Renaissance style, and constructed as the Book-Cadillac, it is part of Westin Hotels and embodies Neo-Classical elements and building sculpture, incorporating brick and limestone.</string>
+    <string name="westin_hotel_address">1114 Washington Blvd, Detroit, MI 48226</string>
+    <string name="westin_hotel_number">Phone: (313) 442-1600</string>
+
+    <string name="inn_on_ferry_street">The Inn on Ferry Street</string>
+    <string name="inn_on_ferry_street_details">Located in the East Ferry Street Historic District of Midtown Detroit, The Inn on Ferry Street sets the standard for elegant guest quarters and dedicated service. Just steps from the state\’s finest museums, acclaimed Detroit Medical Center and Wayne State University, the Inn is a relaxing change of pace from the standard business hotel.  Consisting of four restored Victorian homes, and two carriage houses the Inn abounds in sophisticated luxury. The Inn On Ferry Street has beautifully maintained landscaping and stunning public spaces.</string>
+    <string name="inn_on_ferry_street_address">84 E Ferry St, Detroit, MI 48202</string>
+    <string name="inn_on_ferry_street_number">Phone: (313) 871-6000</string>
+
+    <string name="crowne_plaza_hotel">Crowne Plaza Hotel</string>
+    <string name="crowne_plaza_hotel_details">The Plaza Land Company was established in 1955 to construct a modern hotel on a site adjacent to the planned Convention Hall and Exhibits Building. In 1956, the company announced a partnership with Conrad Hilton to construct a $24 million hotel, to be named the Pontchartrain Hilton. However the Hilton Hotels Board vetoed the deal in 1960, after which the Plaza Land Company turned to Samuel and Aaron Gershenson\'s Downtown Investment Company, which assumed control of the project.</string>
+    <string name="crowne_plaza_hotel_address">2 Washington Blvd, Detroit, MI 48226</string>
+    <string name="crowne_plaza_hotel_number">Phone: (313) 965-0200</string>
+
+    <string name="doubletree_suites">DoubleTree Suites</string>
+    <string name="doubletree_suites_details">This historic DoubleTree Suites by Hilton Hotel Detroit Downtown - Fort Shelby offers modern all-suite accommodations in the heart of the city. Having recently undergone major refurbishment, our large suites average over 650 sq. ft. and offer more space than many other hotels in Detroit. With complimentary internet access and complimentary shuttle, DoubleTree will keep you connected online and around town.</string>
+    <string name="doubletree_suites_address">525 W Lafayette Blvd, Detroit, MI 48226</string>
+    <string name="doubletree_suites_number">Phone: (313) 963-5600</string>
+
+    <string name="holiday_inn">Holiday Inn Express &amp; Suites Detroit Downtown</string>
+    <string name="holiday_inn_details">Stay Smart at the Holiday Inn Express Hotel &amp; Suites of Downtown Detroit, a perfect location for the business or leisure traveler. In addition to our finely appointed guest rooms. Some of our outstanding amenities include a state-of-the-art fitness Center, indoor heated pool, &amp; 24-hour business center.</string>
+    <string name="holiday_inn_address">1020 Washington Blvd, Detroit, MI 48226</string>
+    <string name="holiday_inn_number">Phone: (313) 887-7000</string>
+
+    <string name="red_roof_inn">Red Roof Inn Detroit</string>
+    <string name="red_roof_inn_details">Red Roof Inn Detroit – Dearborn Greenfield Village is a 100% smoke-free inn that offers free Wi-Fi and flat screen TVs in all guestrooms as well as Grab &amp; Go Breakfast bags. We are just 11 miles from downtown Detroit sports venues, theaters and casinos as well as only 15 miles away from Little Caesars Arena! Our hotel has 90 deluxe rooms and we are within walking distance of several restaurants. Providing easy access to downtown Detroit and the Detroit Metro Airport.</string>
+    <string name="red_roof_inn_address">24130 Michigan Ave, Dearborn, MI 48124</string>
+    <string name="red_roof_inn_number">Phone: (313) 278-9732</string>
+
+    <string name="comfort_inn">Comfort Inn Near Greenfield Village</string>
+    <string name="comfort_inn_details">The Comfort Inn Near Greenfield Village is a Dearborn, MI hotel near top businesses and attractions.</string>
+    <string name="comfort_inn_address">20061 Michigan Ave, Dearborn, MI 48124</string>
+    <string name="comfort_inn_number">Phone: (313) 436-9600</string>
 
     <!-- Museums -->
     <string name="detroit_institute_of_arts">Detroit Institute of the Arts</string>
@@ -66,6 +100,7 @@
     <string name="motown_museum">Motown Museum</string>
     <string name="detroit_historical_museum">Detroit Historical Museum</string>
     <string name="african_american_history_museum">Charles H. Wright Museum of African American History</string>
+
     <!-- Parks -->
     <string name="mariner_park">Mariner Park</string>
     <string name="west_riverfront_park">West Riverfront Park</string>
