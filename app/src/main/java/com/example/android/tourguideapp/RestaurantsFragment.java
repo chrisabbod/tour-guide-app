@@ -32,15 +32,15 @@ public class RestaurantsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         final ArrayList<Locations> locations = new ArrayList<>();
-        locations.add(new Locations("Giovanni's", R.drawable.giovanni_restaurant));
-        locations.add(new Locations("Chartreuse Kitchen & Cocktails", R.drawable.chartreuse_restaurant));
-        locations.add(new Locations("Supino Pizzeria", R.drawable.supino_pizzeria));
-        locations.add(new Locations("Selden Standard", R.drawable.selden_standard_restaurant));
-        locations.add(new Locations("Buddy's Pizza", R.drawable.buddy_pizza));
-        locations.add(new Locations("Wright & Company", R.drawable.wright_and_company_restaurant));
-        locations.add(new Locations("Mudgies", R.drawable.mudgies_restaurant));
-        locations.add(new Locations("Lafayette Coney Island", R.drawable.lafayette_coney_island));
-        locations.add(new Locations("Vicente Cuban Cuisine", R.drawable.vicente_cuban_cuisine));
+        locations.add(new Locations(getString(R.string.giovanni), R.drawable.giovanni_restaurant));
+        locations.add(new Locations(getString(R.string.chartreuse), R.drawable.chartreuse_restaurant));
+        locations.add(new Locations(getString(R.string.supino), R.drawable.supino_pizzeria));
+        locations.add(new Locations(getString(R.string.selden_standard), R.drawable.selden_standard_restaurant));
+        locations.add(new Locations(getString(R.string.buddy_pizza), R.drawable.buddy_pizza));
+        locations.add(new Locations(getString(R.string.wright_company), R.drawable.wright_and_company_restaurant));
+        locations.add(new Locations(getString(R.string.mudgies), R.drawable.mudgies_restaurant));
+        locations.add(new Locations(getString(R.string.lafayette_coney_island), R.drawable.lafayette_coney_island));
+        locations.add(new Locations(getString(R.string.vicente), R.drawable.vicente_cuban_cuisine));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
         final ListView listView = (ListView)rootView.findViewById(R.id.list);
