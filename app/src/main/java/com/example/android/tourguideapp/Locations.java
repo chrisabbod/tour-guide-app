@@ -2,16 +2,23 @@ package com.example.android.tourguideapp;
 
 public class Locations {
 
-    private String mLocationName, mLocationDetails, mLocationAddress, mLocationHours;
+    private String mLocationName, mLocationDetails, mLocationAddress, mPhoneNumber;
     private int mImageResource;
-
-    Locations(String locationName){
-        mLocationName = locationName;
-    }
+    private double mLatitude, mLongitude;
 
     Locations(String locationName, int imageResource){
         mLocationName = locationName;
         mImageResource = imageResource;
+    }
+
+    Locations(String locationName, String locationDetails, String locationAddress, String phoneNumber, int imageResource, double latitude, double longitude){
+        mLocationName = locationName;
+        mLocationDetails = locationDetails;
+        mLocationAddress = locationAddress;
+        mPhoneNumber = phoneNumber;
+        mImageResource = imageResource;
+        mLatitude = latitude;
+        mLongitude = longitude;
     }
 
     public String getLocationName() {
@@ -38,19 +45,19 @@ public class Locations {
         this.mImageResource = mImageResource;
     }
 
-    public String getmLocationAddress() {
+    public String getLocationAddress() {
         return mLocationAddress;
     }
 
-    public void setmLocationAddress(String mLocationAddress) {
+    public void setLocationAddress(String mLocationAddress) {
         this.mLocationAddress = mLocationAddress;
     }
 
-    public String getmLocationHours() {
-        return mLocationHours;
+    public String getPhoneNumber() {
+        return mPhoneNumber;
     }
 
-    public void setmLocationHours(String mLocationHours) {
-        this.mLocationHours = mLocationHours;
+    public void setPhoneNumber(String mPhoneNumber) {
+        this.mPhoneNumber = mPhoneNumber;
     }
 }

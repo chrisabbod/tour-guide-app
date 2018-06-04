@@ -13,7 +13,15 @@
 
     <!-- Popular Places -->
     <string name="fort_wayne">Fort Wayne</string>
+    <string name="fort_wayne_details">Fort Wayne is located in the city of Detroit, Michigan, at the foot of Livernois Avenue in the Delray neighborhood. The fort is situated on the Detroit River at a point where it is about a mile to the Canadian shore.</string>
+    <string name="fort_wayne_address">6325 W Jefferson Ave, Detroit, MI 48209</string>
+    <string name="fort_wayne_number">(313) 628-0796</string>
+
     <string name="pewabic_pottery">Pewabic Pottery</string>
+    <string name="pewabic_pottery_details">Pewabic Pottery is a ceramic studio and school at 10125 East Jefferson Avenue, Detroit, Michigan. Founded in 1903, the studio is known for its iridescent glazes, some of which grace notable buildings such as the Shedd Aquarium and Basilica of the National Shrine of the Immaculate Conception. The pottery continues in operation today, and was designated a National Historic Landmark in 1991.</string>
+    <string name="pewabic_pottery_address">10125 E Jefferson Ave, Detroit, MI 48214</string>
+    <string name="pewabic_pottery_number">(313) 626-2000</string>
+
     <string name="renaissance_center">GM Renaissance Center</string>
     <string name="henry_ford_estate">Henry Ford Estate</string>
     <string name="comerica_park">Comerica Park</string>

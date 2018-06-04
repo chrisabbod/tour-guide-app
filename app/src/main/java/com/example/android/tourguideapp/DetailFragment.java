@@ -14,7 +14,7 @@ import android.widget.TextView;
  * A simple {@link Fragment} subclass.
  */
 public class DetailFragment extends Fragment {
-    private String stringExtra;
+    private String stringExtraTitle, stringExtraDetails, stringExtraAddress, stringExtraPhone;
     private int intExtra;
 
     public DetailFragment() {
@@ -32,22 +32,34 @@ public class DetailFragment extends Fragment {
         if(savedInstanceState == null){
             Bundle extras = getActivity().getIntent().getExtras();
             if(extras == null){
-                stringExtra = null;
+                stringExtraTitle = null;
+                stringExtraDetails = null;
+                stringExtraAddress = null;
+                stringExtraPhone = null;
             }else{
-                stringExtra = extras.getString("string_title_index");
+                stringExtraTitle = extras.getString("string_title_index");
+                stringExtraDetails = extras.getString("string_details_index");
+                stringExtraAddress = extras.getString("string_address_index");
+                stringExtraPhone = extras.getString("string_phone_index");
                 intExtra = extras.getInt("image_resource_index");
             }
         }else{
-            stringExtra = (String)savedInstanceState.getSerializable("string_title_index");  //Retrieves string extra after screen rotation
+            stringExtraTitle = (String)savedInstanceState.getSerializable("string_title_index");  //Retrieves string extra after screen rotation
             intExtra = savedInstanceState.getInt("image_resource_index");
         }//TODO: Keep information across rotation
 
 
-        ImageView detailImageView = (ImageView) rootView.findViewById(R.id.detail_image_view);
-        TextView detailTextView = (TextView)rootView.findViewById(R.id.detail_text_view);
+        ImageView detailImageView = rootView.findViewById(R.id.detail_image_view);
+        TextView titleView = rootView.findViewById(R.id.title_text_view);
+        TextView detailView = rootView.findViewById(R.id.detail_text_view);
+        TextView addressView = rootView.findViewById(R.id.address_text_view);
+        TextView phoneNumberView = rootView.findViewById(R.id.phone_number_text_view);
 
         detailImageView.setImageResource(intExtra);
-        detailTextView.setText(stringExtra);
+        titleView.setText(stringExtraTitle);
+        detailView.setText(stringExtraDetails);
+        addressView.setText(stringExtraAddress);
+        phoneNumberView.setText(stringExtraPhone);
 
         return rootView;
     }
@@ -56,7 +68,7 @@ public class DetailFragment extends Fragment {
         super.onResume();
 
         //Set title bar
-        (getActivity()).setTitle(stringExtra);
+        (getActivity()).setTitle(stringExtraTitle);
     }
 
 }
