@@ -32,13 +32,13 @@ public class ParksFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         final ArrayList<Locations> locations = new ArrayList<>();
-        locations.add(new Locations("Mariner Park", R.drawable.mariner_park));
-        locations.add(new Locations("West Riverfront Park", R.drawable.west_riverfront_park));
-        locations.add(new Locations("Grand Circus Park", R.drawable.grand_circus_park));
-        locations.add(new Locations("Belle Isle", R.drawable.belle_isle_park));
-        locations.add(new Locations("Detroit Zoo", R.drawable.detroit_zoo));
-        locations.add(new Locations("Campus Martius Park", R.drawable.campus_martius_park));
-        locations.add(new Locations("William G. Milliken State Park and Harbor", R.drawable.william_state_park));
+        locations.add(new Locations(getString(R.string.mariner_park), R.drawable.mariner_park));
+        locations.add(new Locations(getString(R.string.west_riverfront_park), R.drawable.west_riverfront_park));
+        locations.add(new Locations(getString(R.string.grand_circus_park), R.drawable.grand_circus_park));
+        locations.add(new Locations(getString(R.string.belle_isle), R.drawable.belle_isle_park));
+        locations.add(new Locations(getString(R.string.detroit_zoo), R.drawable.detroit_zoo));
+        locations.add(new Locations(getString(R.string.campus_martius_park), R.drawable.campus_martius_park));
+        locations.add(new Locations(getString(R.string.state_park_harbor), R.drawable.william_state_park));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
         final ListView listView = (ListView)rootView.findViewById(R.id.list);
