@@ -15,18 +15,37 @@
     <string name="fort_wayne">Fort Wayne</string>
     <string name="fort_wayne_details">Fort Wayne is located in the city of Detroit, Michigan, at the foot of Livernois Avenue in the Delray neighborhood. The fort is situated on the Detroit River at a point where it is about a mile to the Canadian shore.</string>
     <string name="fort_wayne_address">6325 W Jefferson Ave, Detroit, MI 48209</string>
-    <string name="fort_wayne_number">(313) 628-0796</string>
+    <string name="fort_wayne_number">Phone: (313) 628-0796</string>
 
     <string name="pewabic_pottery">Pewabic Pottery</string>
     <string name="pewabic_pottery_details">Pewabic Pottery is a ceramic studio and school at 10125 East Jefferson Avenue, Detroit, Michigan. Founded in 1903, the studio is known for its iridescent glazes, some of which grace notable buildings such as the Shedd Aquarium and Basilica of the National Shrine of the Immaculate Conception. The pottery continues in operation today, and was designated a National Historic Landmark in 1991.</string>
     <string name="pewabic_pottery_address">10125 E Jefferson Ave, Detroit, MI 48214</string>
-    <string name="pewabic_pottery_number">(313) 626-2000</string>
+    <string name="pewabic_pottery_number">Phone: (313) 626-2000</string>
 
     <string name="renaissance_center">GM Renaissance Center</string>
+    <string name="renaissance_center_details">The Renaissance Center is a group of seven interconnected skyscrapers in Downtown Detroit, Michigan, United States. Located on the International Riverfront, the Renaissance Center complex is owned by General Motors as its world headquarters.</string>
+    <string name="renaissance_center_address">Detroit, MI 48243</string>
+    <string name="renaissance_center_number">Phone: (313) 567-3126</string>
+
     <string name="henry_ford_estate">Henry Ford Estate</string>
+    <string name="henry_ford_estate_details">Fair Lane was the name of the estate of Ford Motor Company founder Henry Ford and his wife, Clara Ford, in Dearborn, Michigan, in the United States.</string>
+    <string name="henry_ford_estate_address">1 Fair Ln Dr, Dearborn, MI 48128</string>
+    <string name="henry_ford_estate_number">Phone: (313) 668-3200</string>
+
     <string name="comerica_park">Comerica Park</string>
-    <string name="detroit_public_library">Detroit Public Library</string>
+    <string name="comerica_park_details">Comerica Park is an open-air ballpark located in Downtown Detroit. It serves as the home of the Detroit Tigers of Major League Baseball, replacing Tiger Stadium in 2000.</string>
+    <string name="comerica_park_address">2100 Woodward Ave, Detroit, MI 48201</string>
+    <string name="comerica_park_number">Phone: (313) 962-4000</string>
+
+    <string name="detroit_public_library">Main | Detroit Public Library</string>
+    <string name="detroit_public_library_details">The Detroit Public Library is the second largest library system in the U.S. state of Michigan by volumes held (after the University of Michigan Library) and is the 21st largest library system (and the fourth-largest public library system) in the United States. It is composed of the Main Library on Woodward Avenue, which houses the library\'s administration offices, and 23 branch locations across the city. The Main Library is part of Detroit's Cultural Center Historic District listed in the National Register of Historic Places adjacent to Wayne State University campus and across from the Detroit Institute of Arts.</string>
+    <string name="detroit_public_library_address">5201 Woodward Ave, Detroit, MI 48202</string>
+    <string name="detroit_public_library_number">Phone: (313) 481-1300</string>
+
     <string name="greektown">Greektown</string>
+    <string name="greektown_details">Greektown is a historic commercial and entertainment district in Detroit, Michigan, located just northeast of the heart of downtown, along Monroe Avenue between Brush and St. Antoine Streets with a station on the city\'s elevated downtown transit system known as the Detroit People Mover. Greektown is also situated between the Renaissance Center, Comerica Park, and Ford Field. The district is dominated by Greek-themed restaurants and includes St. Mary Roman Catholic Church, Second Baptist Church, the Athenium Suite Hotel, and the Greektown Casino-Hotel within its boundaries.</string>
+    <string name="greektown_address">Greektown</string>
+    <string name="greektown_number">Greektown, Detroit, MI</string>
 
     <!-- Hotels -->
     <string name="aloft_hotel">Aloft Detroit at The David Whitney</string>

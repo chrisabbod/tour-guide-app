@@ -39,11 +39,16 @@ public class PopularPlacesFragment extends Fragment {
                 getString(R.string.fort_wayne_number), R.drawable.fort_wayne, 42.299361, -83.096010));
         locations.add(new Locations(getString(R.string.pewabic_pottery), getString(R.string.pewabic_pottery_details),getString(R.string.pewabic_pottery_address),
                 getString(R.string.pewabic_pottery_number),R.drawable.pewabic_pottery, 42.362034, -82.981698));
-        //locations.add(new Locations(getString(R.string.renaissance_center), R.drawable.renaissance_center));
-        //locations.add(new Locations(getString(R.string.henry_ford_estate), R.drawable.henry_ford_estate));
-        //locations.add(new Locations(getString(R.string.comerica_park), R.drawable.comerica_park));
-        //locations.add(new Locations(getString(R.string.detroit_public_library), R.drawable.detroit_public_library));
-        //locations.add(new Locations(getString(R.string.greektown), R.drawable.greektown));
+        locations.add(new Locations(getString(R.string.renaissance_center), getString(R.string.renaissance_center_details), getString(R.string.renaissance_center_address),
+                getString(R.string.renaissance_center_number),R.drawable.renaissance_center, 42.329798, -83.039830));
+        locations.add(new Locations(getString(R.string.henry_ford_estate), getString(R.string.henry_ford_estate_details),getString(R.string.henry_ford_estate_address),
+                getString(R.string.henry_ford_estate_number),R.drawable.henry_ford_estate, 42.312254, -83.225269));
+        locations.add(new Locations(getString(R.string.comerica_park), getString(R.string.comerica_park_details), getString(R.string.comerica_park_address),
+                getString(R.string.comerica_park_number), R.drawable.comerica_park, 42.339189, -83.049478));
+        locations.add(new Locations(getString(R.string.detroit_public_library), getString(R.string.detroit_public_library_details), getString(R.string.detroit_public_library_address),
+                getString(R.string.detroit_public_library_number), R.drawable.detroit_public_library, 42.358543, -83.066777));
+        locations.add(new Locations(getString(R.string.greektown), getString(R.string.greektown_details), getString(R.string.greektown_address),
+                getString(R.string.greektown_number), R.drawable.greektown, 42.335760, -83.042179));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
         ListView listView = (ListView)rootView.findViewById(R.id.list);
