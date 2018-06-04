@@ -19,7 +19,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
  * A simple {@link Fragment} subclass.
  */
 public class MapFragment extends Fragment implements OnMapReadyCallback{
-    private String stringExtra;
+    private String titleExtra;
+    private Double intLatitudeExtra, intLongitudeExtra;
 
 
     public MapFragment() {
@@ -38,12 +39,17 @@ public class MapFragment extends Fragment implements OnMapReadyCallback{
         if(savedInstanceState == null){
             Bundle extras = getActivity().getIntent().getExtras();
             if(extras == null){
-                stringExtra = null;
+                titleExtra = null;
+                intLatitudeExtra = null;
+                intLongitudeExtra = null;
             }else{
-                stringExtra = extras.getString("string_title_index");
+                titleExtra = extras.getString("string_title_key");
+                intLatitudeExtra = extras.getDouble("latitude_index");
+                intLongitudeExtra = extras.getDouble("longitude_index");
             }
         }else{
-            stringExtra = (String)savedInstanceState.getSerializable("string_title_index");  //Retrieves string extra after screen rotation
+            intLatitudeExtra = savedInstanceState.getDouble("latitude_index"); //Retrieves string extra after screen rotation
+            intLongitudeExtra = savedInstanceState.getDouble("longitude_index");
         }//TODO: Keep information across rotation
 
         initMap();
@@ -58,9 +64,9 @@ public class MapFragment extends Fragment implements OnMapReadyCallback{
 
     @Override
     public void onMapReady(GoogleMap map){
-        LatLng latLng = new LatLng(42.358750,-82.929737);
-        map.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 12.0f));
-        map.addMarker(new MarkerOptions().position(latLng).title(stringExtra));  //TODO: Make Marker give correct name
+        LatLng latLng = new LatLng(intLatitudeExtra,intLongitudeExtra);
+        map.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 18.0f));
+        map.addMarker(new MarkerOptions().position(latLng).title(titleExtra));  //TODO: Make Marker give correct name
         map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
     }
 }

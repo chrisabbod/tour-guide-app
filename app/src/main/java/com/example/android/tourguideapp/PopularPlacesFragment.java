@@ -24,6 +24,8 @@ public class PopularPlacesFragment extends Fragment {
     private static final String STRING_ADDRESS_KEY = "string_address_index";
     private static final String STRING_PHONE_KEY = "string_phone_index";
     private static final String IMAGE_RESOURCE_KEY = "image_resource_index";    //Key index used to pass location image resource file
+    private static final String LATITUDE_KEY = "latitude_index";
+    private static final String LONGITUDE_KEY = "longitude_index";
 
     public PopularPlacesFragment() {
         // Required empty public constructor
@@ -63,6 +65,8 @@ public class PopularPlacesFragment extends Fragment {
                 intent.putExtra(STRING_ADDRESS_KEY, locations.get(position).getLocationAddress()); //Retrieve location address
                 intent.putExtra(STRING_PHONE_KEY, locations.get(position).getPhoneNumber()); //Retrieve location phone number
                 intent.putExtra(IMAGE_RESOURCE_KEY, locations.get(position).getImageResource()); //Pass image resource to detail activity so image can be displayed//Toast.makeText(MainActivity.this, locations.get(position).getImageResource(), Toast.LENGTH_SHORT).show();
+                intent.putExtra(LATITUDE_KEY, locations.get(position).getLatitude());
+                intent.putExtra(LONGITUDE_KEY, locations.get(position).getLongitude());
                 startActivity(intent);
             }
         });
