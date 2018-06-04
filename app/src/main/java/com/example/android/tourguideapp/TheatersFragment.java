@@ -30,13 +30,13 @@ public class TheatersFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         final ArrayList<Locations> locations = new ArrayList<>();
-        locations.add(new Locations("Detroit Opera House", R.drawable.detroit_opera_house));
-        locations.add(new Locations("The Redford Theatre", R.drawable.the_redford_theatre));
-        locations.add(new Locations("Sound Board at MotorCity Casino Hotel", R.drawable.sound_board_theater));
-        locations.add(new Locations("Masonic Temple Theater", R.drawable.masonic_temple_theater));
-        locations.add(new Locations("Detroit Repertory Theatre", R.drawable.detroit_repertory_theatre));
-        locations.add(new Locations("Senate Theater", R.drawable.senate_theater));
-        locations.add(new Locations("Fox Theatre", R.drawable.fox_theatre));
+        locations.add(new Locations(getString(R.string.detroit_opera_house), R.drawable.detroit_opera_house));
+        locations.add(new Locations(getString(R.string.redford_theatre), R.drawable.the_redford_theatre));
+        locations.add(new Locations(getString(R.string.sound_board), R.drawable.sound_board_theater));
+        locations.add(new Locations(getString(R.string.masonic_temple), R.drawable.masonic_temple_theater));
+        locations.add(new Locations(getString(R.string.repertory_theatre), R.drawable.detroit_repertory_theatre));
+        locations.add(new Locations(getString(R.string.senate_theater), R.drawable.senate_theater));
+        locations.add(new Locations(getString(R.string.fox_theatre), R.drawable.fox_theatre));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
         ListView listView = (ListView)rootView.findViewById(R.id.list);
