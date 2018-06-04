@@ -126,28 +126,120 @@
 
     <!-- Parks -->
     <string name="mariner_park">Mariner Park</string>
+    <string name="mariner_park_details">Mariner Park</string>
+    <string name="mariner_park_address">Mariner Park</string>
+    <string name="mariner_park_number">Mariner Park</string>
+
     <string name="west_riverfront_park">West Riverfront Park</string>
+    <string name="west_riverfront_park_details">West Riverfront Park</string>
+    <string name="west_riverfront_park_address">West Riverfront Park</string>
+    <string name="west_riverfront_park_number">West Riverfront Park</string>
+
     <string name="grand_circus_park">Grand Circus Park</string>
+    <string name="grand_circus_park_details">Grand Circus Park</string>
+    <string name="grand_circus_park_address">Grand Circus Park</string>
+    <string name="grand_circus_park_number">Grand Circus Park</string>
+
     <string name="belle_isle">Belle Isle</string>
+    <string name="belle_isle_details">Belle Isle</string>
+    <string name="belle_isle_address">Belle Isle</string>
+    <string name="belle_isle_number">Belle Isle</string>
+
     <string name="detroit_zoo">Detroit Zoo</string>
+    <string name="detroit_zoo_details">Detroit Zoo</string>
+    <string name="detroit_zoo_address">Detroit Zoo</string>
+    <string name="detroit_zoo_number">Detroit Zoo</string>
+
     <string name="campus_martius_park">Campus Martius Park</string>
+    <string name="campus_martius_park_details">Campus Martius Park</string>
+    <string name="campus_martius_park_address">Campus Martius Park</string>
+    <string name="campus_martius_park_number">Campus Martius Park</string>
+
     <string name="state_park_harbor">William G. Milliken State Park and Harbor</string>
+    <string name="state_park_harbor_details">William G. Milliken State Park and Harbor</string>
+    <string name="state_park_harbor_address">William G. Milliken State Park and Harbor</string>
+    <string name="state_park_harbor_number">William G. Milliken State Park and Harbor</string>
+
     <!-- Restaurants -->
     <string name="giovanni">Giovanni\'s</string>
+    <string name="giovanni_details">Giovanni\'s</string>
+    <string name="giovanni_address">Giovanni\'s</string>
+    <string name="giovanni_number">Giovanni\'s</string>
+
     <string name="chartreuse">Chartreuse Kitchen &amp; Cocktails</string>
+    <string name="chartreuse_details">Chartreuse Kitchen &amp; Cocktails</string>
+    <string name="chartreuse_address">Chartreuse Kitchen &amp; Cocktails</string>
+    <string name="chartreuse_number">Chartreuse Kitchen &amp; Cocktails</string>
+
     <string name="supino">Supino Pizzeria</string>
+    <string name="supino_details">Supino Pizzeria</string>
+    <string name="supino_address">Supino Pizzeria</string>
+    <string name="supino_number">Supino Pizzeria</string>
+
     <string name="selden_standard">Selden Standard</string>
+    <string name="selden_standard_details">Selden Standard</string>
+    <string name="selden_standard_address">Selden Standard</string>
+    <string name="selden_standard_number">Selden Standard</string>
+
     <string name="buddy_pizza">Buddy\'s Pizza</string>
+    <string name="buddy_pizza_details">Buddy\'s Pizza</string>
+    <string name="buddy_pizza_address">Buddy\'s Pizza</string>
+    <string name="buddy_pizza_number">Buddy\'s Pizza</string>
+
     <string name="wright_company">Wright &amp; Company</string>
+    <string name="wright_company_details">Wright &amp; Company</string>
+    <string name="wright_company_address">Wright &amp; Company</string>
+    <string name="wright_company">Wright &amp; Company</string>
+
     <string name="mudgies">Mudgie\'s</string>
+    <string name="mudgies_details">Mudgie\'s</string>
+    <string name="mudgies_address">Mudgie\'s</string>
+    <string name="mudgies_number">Mudgie\'s</string>
+
     <string name="lafayette_coney_island">Lafayette Coney Island</string>
+    <string name="lafayette_coney_island_details">Lafayette Coney Island</string>
+    <string name="lafayette_coney_island_address">Lafayette Coney Island</string>
+    <string name="lafayette_coney_island_number">Lafayette Coney Island</string>
+
     <string name="vicente">Vicente Cuban Cuisine</string>
+    <string name="vicente_details">Vicente Cuban Cuisine</string>
+    <string name="vicente_address">Vicente Cuban Cuisine</string>
+    <string name="vicente_number">Vicente Cuban Cuisine</string>
+
     <!-- Theaters -->
     <string name="detroit_opera_house">Detroit Opera House</string>
+    <string name="detroit_opera_house_details">Detroit Opera House</string>
+    <string name="detroit_opera_house_address">Detroit Opera House</string>
+    <string name="detroit_opera_house_number">Detroit Opera House</string>
+
     <string name="redford_theatre">The Redford Theatre</string>
+    <string name="redford_theatre_details">The Redford Theatre</string>
+    <string name="redford_theatre_address">The Redford Theatre</string>
+    <string name="redford_theatre_number">The Redford Theatre</string>
+
     <string name="sound_board">Sound Board at MotorCity Casino Hotel</string>
+    <string name="sound_board_details">Sound Board at MotorCity Casino Hotel</string>
+    <string name="sound_board_address">Sound Board at MotorCity Casino Hotel</string>
+    <string name="sound_board_number">Sound Board at MotorCity Casino Hotel</string>
+
     <string name="masonic_temple">Masonic Temple Theater</string>
+    <string name="masonic_temple_details">Masonic Temple Theater</string>
+    <string name="masonic_temple_address">Masonic Temple Theater</string>
+    <string name="masonic_temple_number">Masonic Temple Theater</string>
+
     <string name="repertory_theatre">Detroit Repertory Theatre</string>
+    <string name="repertory_theatre_details">Detroit Repertory Theatre</string>
+    <string name="repertory_theatre_address">Detroit Repertory Theatre</string>
+    <string name="repertory_theatre_number">Detroit Repertory Theatre</string>
+
     <string name="senate_theater">Senate Theater</string>
+    <string name="senate_theater_details">Senate Theater</string>
+    <string name="senate_theater_address">Senate Theater</string>
+    <string name="senate_theater_number">Senate Theater</string>
+
     <string name="fox_theatre">Fox Theatre</string>
+    <string name="fox_theatre_details">Fox Theatre</string>
+    <string name="fox_theatre_address">Fox Theatre</string>
+    <string name="fox_theatre_number">Fox Theatre</string>
+
 </resources>
