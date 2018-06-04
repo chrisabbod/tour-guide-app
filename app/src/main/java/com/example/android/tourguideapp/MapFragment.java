@@ -34,7 +34,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback{
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_map, container, false);
 
-        //TODO: When returning to main activity go back to correct list (park, museum, etc.)
         //If there is no savedInstanceState (Because we just arrived at this activity from the main activity) retrieve the string extra
         if(savedInstanceState == null){
             Bundle extras = getActivity().getIntent().getExtras();
@@ -50,7 +49,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback{
         }else{
             intLatitudeExtra = savedInstanceState.getDouble("latitude_index"); //Retrieves string extra after screen rotation
             intLongitudeExtra = savedInstanceState.getDouble("longitude_index");
-        }//TODO: Keep information across rotation
+        }
 
         initMap();
 
@@ -66,7 +65,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback{
     public void onMapReady(GoogleMap map){
         LatLng latLng = new LatLng(intLatitudeExtra,intLongitudeExtra);
         map.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 18.0f));
-        map.addMarker(new MarkerOptions().position(latLng).title(titleExtra));  //TODO: Make Marker give correct name
+        map.addMarker(new MarkerOptions().position(latLng).title(titleExtra));
         map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
     }
 }
