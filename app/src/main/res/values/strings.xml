@@ -11,4 +11,58 @@
     <string name="information">Information</string>
     <string name="map">Map</string>
 
+    <!-- Popular Places -->
+    <string name="fort_wayne">Fort Wayne</string>
+    <string name="pewabic_pottery">Pewabic Pottery</string>
+    <string name="renaissance_center">GM Renaissance Center</string>
+    <string name="henry_ford_estate">Henry Ford Estate</string>
+    <string name="comerica_park">Comerica Park</string>
+    <string name="detroit_public_library">Detroit Public Library</string>
+    <string name="greektown">Greektown</string>
+
+    <!-- Hotels -->
+    <string name="aloft_hotel">Aloft Detroit at The David Whitney</string>
+    <string name="mgm_grand_hotel">MGM Grand Detroit</string>
+    <string name="westin_hotel">Westin Book Cadillac Hotel</string>
+    <string name="inn_on_ferry_street">The Inn on Ferry Street</string>
+    <string name="crowne_plaza_hotel">Crowne Plaza Hotel</string>
+    <string name="doubletree_suites">DoubleTree Suites</string>
+    <string name="holiday_inn">Holiday Inn Express &amp; Suites Detroit Downtown</string>
+    <string name="red_roof_inn">Red Roof Inn Detroit</string>
+    <string name="comfort_inn">Comfort Inn Near Greenfield Village</string>
+
+
+    <!-- Museums -->
+    <string name="detroit_institute_of_arts">Detroit Institute of the Arts</string>
+    <string name="henry_ford_museum">Henry Ford Museum</string>
+    <string name="greenfield_village">Greenfield Village</string>
+    <string name="motown_museum">Motown Museum</string>
+    <string name="detroit_historical_museum">Detroit Historical Museum</string>
+    <string name="african_american_history_museum">Charles H. Wright Museum of African American History</string>
+    <!-- Parks -->
+    <string name="mariner_park">Mariner Park</string>
+    <string name="west_riverfront_park">West Riverfront Park</string>
+    <string name="grand_circus_park">Grand Circus Park</string>
+    <string name="belle_isle">Belle Isle</string>
+    <string name="detroit_zoo">Detroit Zoo</string>
+    <string name="campus_martius_park">Campus Martius Park</string>
+    <string name="state_park_harbor">William G. Milliken State Park and Harbor</string>
+    <!-- Restaurants -->
+    <string name="giovanni">Giovanni\'s</string>
+    <string name="chartreuse">Chartreuse Kitchen &amp; Cocktails</string>
+    <string name="supino">Supino Pizzeria</string>
+    <string name="selden_standard">Selden Standard</string>
+    <string name="buddy_pizza">Buddy\'s Pizza</string>
+    <string name="wright_company">Wright &amp; Company</string>
+    <string name="mudgies">Mudgie\'s</string>
+    <string name="lafayette_coney_island">Lafayette Coney Island</string>
+    <string name="vicente">Vicente Cuban Cuisine</string>
+    <!-- Theaters -->
+    <string name="detroit_opera_house">Detroit Opera House</string>
+    <string name="redford_theatre">The Redford Theatre</string>
+    <string name="sound_board">Sound Board at MotorCity Casino Hotel</string>
+    <string name="masonic_temple">Masonic Temple Theater</string>
+    <string name="repertory_theatre">Detroit Repertory Theatre</string>
+    <string name="senate_theater">Senate Theater</string>
+    <string name="fox_theatre">Fox Theatre</string>
 </resources>

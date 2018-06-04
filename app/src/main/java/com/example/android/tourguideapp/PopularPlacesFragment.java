@@ -4,12 +4,14 @@ package com.example.android.tourguideapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -30,13 +32,13 @@ public class PopularPlacesFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
         final ArrayList<Locations> locations = new ArrayList<>();
-        locations.add(new Locations("Fort Wayne", R.drawable.fort_wayne));
-        locations.add(new Locations("Pewabic Pottery", R.drawable.pewabic_pottery));
-        locations.add(new Locations("GM Renaissance Center", R.drawable.renaissance_center));
-        locations.add(new Locations("Henry Ford Estate", R.drawable.henry_ford_estate));
-        locations.add(new Locations("Comerica Park", R.drawable.comerica_park));
-        locations.add(new Locations("Detroit Public Library", R.drawable.detroit_public_library));
-        locations.add(new Locations("Greektown", R.drawable.greektown));
+        locations.add(new Locations(getString(R.string.fort_wayne), R.drawable.fort_wayne));
+        locations.add(new Locations(getString(R.string.pewabic_pottery), R.drawable.pewabic_pottery));
+        locations.add(new Locations(getString(R.string.renaissance_center), R.drawable.renaissance_center));
+        locations.add(new Locations(getString(R.string.henry_ford_estate), R.drawable.henry_ford_estate));
+        locations.add(new Locations(getString(R.string.comerica_park), R.drawable.comerica_park));
+        locations.add(new Locations(getString(R.string.detroit_public_library), R.drawable.detroit_public_library));
+        locations.add(new Locations(getString(R.string.greektown), R.drawable.greektown));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
         ListView listView = (ListView)rootView.findViewById(R.id.list);
