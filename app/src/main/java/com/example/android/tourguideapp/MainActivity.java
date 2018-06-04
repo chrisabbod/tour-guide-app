@@ -81,10 +81,12 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction transaction = fm.beginTransaction();
-                transaction.replace(R.id.container, fragment);
-                transaction.commit();
 
+                fm.beginTransaction()
+                        .replace(R.id.container, fragment)
+                        .addToBackStack(null)
+                        .commit();
+                //TODO: Fix issue with up button returning you to original activity instead of last activity
                 return false;
             }
         });
