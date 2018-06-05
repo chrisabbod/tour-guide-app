@@ -91,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
 
         fm.beginTransaction()
                 .replace(R.id.container, fragment)
-                //.addToBackStack(null)
                 .commit();
     }
 
