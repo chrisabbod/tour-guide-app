@@ -162,84 +162,84 @@
 
     <!-- Restaurants -->
     <string name="giovanni">Giovanni\'s</string>
-    <string name="giovanni_details">Giovanni\'s</string>
-    <string name="giovanni_address">Giovanni\'s</string>
-    <string name="giovanni_number">Giovanni\'s</string>
+    <string name="giovanni_details">Sinatra once ate at this mom-&amp;-son-run trattoria famous for rustic Italian fare &amp; handmade pastas.</string>
+    <string name="giovanni_address">330 Oakwood Blvd, Detroit, MI 48217</string>
+    <string name="giovanni_number">Phone: (313) 841-0122</string>
 
     <string name="chartreuse">Chartreuse Kitchen &amp; Cocktails</string>
-    <string name="chartreuse_details">Chartreuse Kitchen &amp; Cocktails</string>
-    <string name="chartreuse_address">Chartreuse Kitchen &amp; Cocktails</string>
-    <string name="chartreuse_number">Chartreuse Kitchen &amp; Cocktails</string>
+    <string name="chartreuse_details">Cozy, seasonal American dining spot with botanical decor &amp; a craft cocktail list, plus beer &amp; wine.</string>
+    <string name="chartreuse_address">15 E Kirby St D, Detroit, MI 48202</string>
+    <string name="chartreuse_number">Phone: (313) 818-3915</string>
 
     <string name="supino">Supino Pizzeria</string>
-    <string name="supino_details">Supino Pizzeria</string>
-    <string name="supino_address">Supino Pizzeria</string>
-    <string name="supino_number">Supino Pizzeria</string>
+    <string name="supino_details">Busy place for thin-crust pizza &amp; slices with novel toppings like egg &amp; turkey.</string>
+    <string name="supino_address">2457 Russell St, Detroit, MI 48207</string>
+    <string name="supino_number">Phone: (313) 567-7879</string>
 
     <string name="selden_standard">Selden Standard</string>
-    <string name="selden_standard_details">Selden Standard</string>
-    <string name="selden_standard_address">Selden Standard</string>
-    <string name="selden_standard_number">Selden Standard</string>
+    <string name="selden_standard_details">Seasonal, locally sourced small plates &amp; craft cocktails are the focus at this stylish New American.</string>
+    <string name="selden_standard_address">3921 2nd Ave, Detroit, MI 48201</string>
+    <string name="selden_standard_number">Phone: (313) 438-5055</string>
 
     <string name="buddy_pizza">Buddy\'s Pizza</string>
-    <string name="buddy_pizza_details">Buddy\'s Pizza</string>
-    <string name="buddy_pizza_address">Buddy\'s Pizza</string>
-    <string name="buddy_pizza_number">Buddy\'s Pizza</string>
+    <string name="buddy_pizza_details">Iconic pizza chain (since 1946) known for its square slices &amp; soups, plus other casual Italian fare.</string>
+    <string name="buddy_pizza_address">17125 Conant St, Detroit, MI 48212</string>
+    <string name="buddy_pizza_number">Phone: (313) 892-9001</string>
 
     <string name="wright_company">Wright &amp; Company</string>
-    <string name="wright_company_details">Wright &amp; Company</string>
-    <string name="wright_company_address">Wright &amp; Company</string>
-    <string name="wright_company_number">Wright &amp; Company</string>
+    <string name="wright_company_details">Creative small plates with a seasonal focus, plus craft cocktails, in polished vintage surroundings.</string>
+    <string name="wright_company_address">1500 Woodward Ave floor 2, Detroit, MI 48226</string>
+    <string name="wright_company_number">Phone: (313) 962-7711</string>
 
     <string name="mudgies">Mudgie\'s</string>
-    <string name="mudgies_details">Mudgie\'s</string>
-    <string name="mudgies_address">Mudgie\'s</string>
-    <string name="mudgies_number">Mudgie\'s</string>
+    <string name="mudgies_details">Quaint deli offers table service for house-smoked meat sandwiches, homemade soups &amp; craft beer.</string>
+    <string name="mudgies_address">1300 Porter St, Detroit, MI 48226</string>
+    <string name="mudgies_number">Phone: (313) 961-2000</string>
 
     <string name="lafayette_coney_island">Lafayette Coney Island</string>
-    <string name="lafayette_coney_island_details">Lafayette Coney Island</string>
-    <string name="lafayette_coney_island_address">Lafayette Coney Island</string>
+    <string name="lafayette_coney_island_details">Legendary, cash-only hot dog diner offers a no-frills menu of chili-topped dogs, burgers &amp; fries.</string>
+    <string name="lafayette_coney_island_address">118 W Lafayette Blvd, Detroit, MI 48226</string>
     <string name="lafayette_coney_island_number">Lafayette Coney Island</string>
 
     <string name="vicente">Vicente Cuban Cuisine</string>
-    <string name="vicente_details">Vicente Cuban Cuisine</string>
-    <string name="vicente_address">Vicente Cuban Cuisine</string>
-    <string name="vicente_number">Vicente Cuban Cuisine</string>
+    <string name="vicente_details">Tables surround a dance floor at this family-run spot known for salsa dancing &amp; Havana-style eats.</string>
+    <string name="vicente_address">1250 Library St, Detroit, MI 48226</string>
+    <string name="vicente_number">Phone: (313) 962-8800</string>
 
     <!-- Theaters -->
     <string name="detroit_opera_house">Detroit Opera House</string>
-    <string name="detroit_opera_house_details">Detroit Opera House</string>
-    <string name="detroit_opera_house_address">Detroit Opera House</string>
-    <string name="detroit_opera_house_number">Detroit Opera House</string>
+    <string name="detroit_opera_house_details">The Detroit Opera House is an ornate opera house located at 1526 Broadway Street in Downtown Detroit, Michigan, within the Grand Circus Park Historic District.</string>
+    <string name="detroit_opera_house_address">1526 Broadway St, Detroit, MI 48226</string>
+    <string name="detroit_opera_house_number">Phone: (313) 237-7464</string>
 
     <string name="redford_theatre">The Redford Theatre</string>
-    <string name="redford_theatre_details">The Redford Theatre</string>
-    <string name="redford_theatre_address">The Redford Theatre</string>
-    <string name="redford_theatre_number">The Redford Theatre</string>
+    <string name="redford_theatre_details">The Redford Theatre in Detroit, Michigan has served as an entertainment venue since it opened on January 27, 1928. It is owned and operated by the Motor City Theatre Organ Society, a 501 organization.</string>
+    <string name="redford_theatre_address">17360 Lahser Rd, Detroit, MI 48219</string>
+    <string name="redford_theatre_number">Phone: (313) 537-2560</string>
 
     <string name="sound_board">Sound Board at MotorCity Casino Hotel</string>
-    <string name="sound_board_details">Sound Board at MotorCity Casino Hotel</string>
-    <string name="sound_board_address">Sound Board at MotorCity Casino Hotel</string>
-    <string name="sound_board_number">Sound Board at MotorCity Casino Hotel</string>
+    <string name="sound_board_details">Modern, multi-level concert venue at the MotorCity Casino &amp; Hotel hosting big-name acts.</string>
+    <string name="sound_board_address">2901 Grand River Ave, Detroit, MI 48201</string>
+    <string name="sound_board_number">Phone: (313) 309-4700</string>
 
     <string name="masonic_temple">Masonic Temple Theater</string>
-    <string name="masonic_temple_details">Masonic Temple Theater</string>
-    <string name="masonic_temple_address">Masonic Temple Theater</string>
-    <string name="masonic_temple_number">Masonic Temple Theater</string>
+    <string name="masonic_temple_details">Iconic, luxurious 1920s-era space boasts 1,037 rooms &amp; hosts live entertainment plus film shoots.</string>
+    <string name="masonic_temple_address">500 Temple St, Detroit, MI 48201</string>
+    <string name="masonic_temple_number">Phone: (313) 832-7100</string>
 
     <string name="repertory_theatre">Detroit Repertory Theatre</string>
-    <string name="repertory_theatre_details">Detroit Repertory Theatre</string>
-    <string name="repertory_theatre_address">Detroit Repertory Theatre</string>
-    <string name="repertory_theatre_number">Detroit Repertory Theatre</string>
+    <string name="repertory_theatre_details">Detroit Repertory Theatre is a regional theatre located at 13103 Woodrow Wilson in Detroit, Michigan with a seating capacity of 194. It is Michigan\'s longest running, non-profit, professional Theatre.</string>
+    <string name="repertory_theatre_address">13103 Woodrow Wilson St, Detroit, MI 48238</string>
+    <string name="repertory_theatre_number">Phone: (313) 868-1347</string>
 
     <string name="senate_theater">Senate Theater</string>
-    <string name="senate_theater_details">Senate Theater</string>
-    <string name="senate_theater_address">Senate Theater</string>
-    <string name="senate_theater_number">Senate Theater</string>
+    <string name="senate_theater_details">800-seat theater featuring movies &amp; live shows with regular concerts on a Wurlitzer pipe organ.</string>
+    <string name="senate_theater_address">6424 Michigan Ave, Detroit, MI 48210</string>
+    <string name="senate_theater_number">Phone: (313) 894-0850</string>
 
     <string name="fox_theatre">Fox Theatre</string>
-    <string name="fox_theatre_details">Fox Theatre</string>
-    <string name="fox_theatre_address">Fox Theatre</string>
-    <string name="fox_theatre_number">Fox Theatre</string>
+    <string name="fox_theatre_details">The Fox Theatre is a performing arts center located at 2211 Woodward Avenue in Downtown Detroit, Michigan, near the Grand Circus Park Historic District.</string>
+    <string name="fox_theatre_address">2211 Woodward Ave, Detroit, MI 48201</string>
+    <string name="fox_theatre_number">Phone: (313) 471-3200</string>
 
 </resources>
