@@ -126,39 +126,39 @@
 
     <!-- Parks -->
     <string name="mariner_park">Mariner Park</string>
-    <string name="mariner_park_details">Mariner Park</string>
-    <string name="mariner_park_address">Mariner Park</string>
-    <string name="mariner_park_number">Mariner Park</string>
+    <string name="mariner_park_details">The park is located on Riverside Blvd. Just take Alter Road towards the Detroit River and make a right onto Riverside Blvd., and it\'s right there. The park isn\'t very large, but offers a beautiful view of the Detroit River and Lake St. Clair. There are several benches facing the water for you to enjoy the view.</string>
+    <string name="mariner_park_address">14702 Riverside Blvd, Detroit, MI 48215</string>
+    <string name="mariner_park_number">No Number</string>
 
     <string name="west_riverfront_park">West Riverfront Park</string>
-    <string name="west_riverfront_park_details">West Riverfront Park</string>
-    <string name="west_riverfront_park_address">West Riverfront Park</string>
-    <string name="west_riverfront_park_number">West Riverfront Park</string>
+    <string name="west_riverfront_park_details">Visitors will find three new pathways linking the riverfront to West Jefferson Avenue, benches, trash receptacles and plenty of lush green space for a variety of outdoor activities.  The Conservancy has expanded the width of the popular RiverWalk along this parcel to 30 feet to better accommodate adequate space for walking, running, biking and fishing.  Safety and security improvements include new railings, lighting, security cameras and call boxes. </string>
+    <string name="west_riverfront_park_address">1801 W. Jefferson Detroit, MI 48216</string>
+    <string name="west_riverfront_park_number">No Number</string>
 
     <string name="grand_circus_park">Grand Circus Park</string>
-    <string name="grand_circus_park_details">Grand Circus Park</string>
-    <string name="grand_circus_park_address">Grand Circus Park</string>
-    <string name="grand_circus_park_number">Grand Circus Park</string>
+    <string name="grand_circus_park_details">The Grand Circus Park Historic District contains the 5-acre Grand Circus Park in Downtown Detroit, Michigan that connects the theatre district with its financial district.</string>
+    <string name="grand_circus_park_address">Detroit, MI 48226</string>
+    <string name="grand_circus_park_number">No Number</string>
 
     <string name="belle_isle">Belle Isle</string>
-    <string name="belle_isle_details">Belle Isle</string>
-    <string name="belle_isle_address">Belle Isle</string>
-    <string name="belle_isle_number">Belle Isle</string>
+    <string name="belle_isle_details">Belle Isle Park, more commonly known simply as Belle Isle, is a 982-acre island park in the Detroit River between Michigan and Ontario. The U.S.-Canada border is in the channel south of Belle Isle such that the island is not in Canada.</string>
+    <string name="belle_isle_address">2 Inselruhe Avenue, Detroit, MI 48207</string>
+    <string name="belle_isle_number">No Number</string>
 
     <string name="detroit_zoo">Detroit Zoo</string>
-    <string name="detroit_zoo_details">Detroit Zoo</string>
-    <string name="detroit_zoo_address">Detroit Zoo</string>
-    <string name="detroit_zoo_number">Detroit Zoo</string>
+    <string name="detroit_zoo_details">The Detroit Zoo is located about 2 miles north of the Detroit city limits at the intersection of Woodward Avenue, 10 Mile Road, and Interstate 696 in Royal Oak and Huntington Woods, Michigan, United States.</string>
+    <string name="detroit_zoo_address">8450 W 10 Mile Rd, Royal Oak, MI 48067</string>
+    <string name="detroit_zoo_number">(248) 541-5717</string>
 
     <string name="campus_martius_park">Campus Martius Park</string>
-    <string name="campus_martius_park_details">Campus Martius Park</string>
-    <string name="campus_martius_park_address">Campus Martius Park</string>
-    <string name="campus_martius_park_number">Campus Martius Park</string>
+    <string name="campus_martius_park_details">Campus Martius Park is a re-established park in Downtown Detroit, Michigan. After the fire of 1805, Campus Martius was the focal point of Judge Augustus Woodward\'s plans to rebuild the city.</string>
+    <string name="campus_martius_park_address">800 Woodward Ave, Detroit, MI 48226</string>
+    <string name="campus_martius_park_number">Phone: (313) 566-8250</string>
 
     <string name="state_park_harbor">William G. Milliken State Park and Harbor</string>
-    <string name="state_park_harbor_details">William G. Milliken State Park and Harbor</string>
-    <string name="state_park_harbor_address">William G. Milliken State Park and Harbor</string>
-    <string name="state_park_harbor_number">William G. Milliken State Park and Harbor</string>
+    <string name="state_park_harbor_details">The William G. Milliken State Park and Harbor is a state park in Michigan, and the state\'s first to be situated in an urban area.</string>
+    <string name="state_park_harbor_address">1900 Atwater St, Detroit, MI 48207</string>
+    <string name="state_park_harbor_number">Phone: (313) 396-0217</string>
 
     <!-- Restaurants -->
     <string name="giovanni">Giovanni\'s</string>
@@ -189,7 +189,7 @@
     <string name="wright_company">Wright &amp; Company</string>
     <string name="wright_company_details">Wright &amp; Company</string>
     <string name="wright_company_address">Wright &amp; Company</string>
-    <string name="wright_company">Wright &amp; Company</string>
+    <string name="wright_company_number">Wright &amp; Company</string>
 
     <string name="mudgies">Mudgie\'s</string>
     <string name="mudgies_details">Mudgie\'s</string>
