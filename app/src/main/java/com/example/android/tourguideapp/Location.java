@@ -1,17 +1,17 @@
 package com.example.android.tourguideapp;
 
-public class Locations {
+public class Location {
 
     private String mLocationName, mLocationDetails, mLocationAddress, mPhoneNumber;
     private int mImageResource;
     private double mLatitude, mLongitude;
 
-    Locations(String locationName, int imageResource){
+    Location(String locationName, int imageResource){
         mLocationName = locationName;
         mImageResource = imageResource;
     }
 
-    Locations(String locationName, String locationDetails, String locationAddress, String phoneNumber, int imageResource, double latitude, double longitude){
+    Location(String locationName, String locationDetails, String locationAddress, String phoneNumber, int imageResource, double latitude, double longitude){
         mLocationName = locationName;
         mLocationDetails = locationDetails;
         mLocationAddress = locationAddress;

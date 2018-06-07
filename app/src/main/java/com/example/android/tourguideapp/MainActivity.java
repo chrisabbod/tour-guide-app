@@ -1,11 +1,9 @@
 package com.example.android.tourguideapp;
 
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
@@ -13,11 +11,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
-import android.widget.Toast;
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -68,22 +61,22 @@ public class MainActivity extends AppCompatActivity {
         Fragment fragment;
         switch(id){
             case R.id.popular_places_item:
-                fragment = new PopularPlacesFragment();
+                fragment = new PopularPlaceFragment();
                 break;
             case R.id.hotels_item:
-                fragment = new HotelsFragment();
+                fragment = new HotelFragment();
                 break;
             case R.id.museums_item:
-                fragment = new MuseumsFragment();
+                fragment = new MuseumFragment();
                 break;
             case R.id.parks_item:
-                fragment = new ParksFragment();
+                fragment = new ParkFragment();
                 break;
             case R.id.restaurants_item:
-                fragment = new RestaurantsFragment();
+                fragment = new RestaurantFragment();
                 break;
             default:
-                fragment = new TheatersFragment();
+                fragment = new TheaterFragment();
                 break;
         }
 

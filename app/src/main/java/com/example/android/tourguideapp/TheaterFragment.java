@@ -12,11 +12,10 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ParksFragment extends Fragment {
+public class TheaterFragment extends Fragment {
     private static final String STRING_TITLE_KEY = "string_title_index";    //Key index used to pass location title to detail activity
     private static final String STRING_DETAILS_KEY = "string_details_index";
     private static final String STRING_ADDRESS_KEY = "string_address_index";
@@ -25,35 +24,33 @@ public class ParksFragment extends Fragment {
     private static final String LATITUDE_KEY = "latitude_index";
     private static final String LONGITUDE_KEY = "longitude_index";
 
-    public ParksFragment() {
+    public TheaterFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
-        final ArrayList<Locations> locations = new ArrayList<>();
-        locations.add(new Locations(getString(R.string.mariner_park), getString(R.string.mariner_park_details), getString(R.string.mariner_park_address),
-                getString(R.string.mariner_park_number), R.drawable.mariner_park, 42.358750, -82.929737));
-        locations.add(new Locations(getString(R.string.west_riverfront_park), getString(R.string.west_riverfront_park_details), getString(R.string.west_riverfront_park_address),
-                getString(R.string.west_riverfront_park_number), R.drawable.west_riverfront_park, 42.321885, -83.063066));
-        locations.add(new Locations(getString(R.string.grand_circus_park), getString(R.string.grand_circus_park_details), getString(R.string.grand_circus_park_address),
-                getString(R.string.grand_circus_park_number), R.drawable.grand_circus_park, 42.328245, -83.049562));
-        locations.add(new Locations(getString(R.string.belle_isle), getString(R.string.belle_isle_details), getString(R.string.belle_isle_address),
-                getString(R.string.belle_isle_number), R.drawable.belle_isle_park, 42.336514, -82.985275));
-        locations.add(new Locations(getString(R.string.detroit_zoo), getString(R.string.detroit_zoo_details), getString(R.string.detroit_zoo_address),
-                getString(R.string.detroit_zoo_number), R.drawable.detroit_zoo, 42.476489, -83.150798));
-        locations.add(new Locations(getString(R.string.campus_martius_park), getString(R.string.campus_martius_park_details), getString(R.string.campus_martius_park_address),
-                getString(R.string.campus_martius_park_number), R.drawable.campus_martius_park, 42.331563, -83.046835));
-        locations.add(new Locations(getString(R.string.state_park_harbor), getString(R.string.state_park_harbor_details), getString(R.string.state_park_harbor_address),
-                getString(R.string.state_park_harbor_number), R.drawable.william_state_park, 42.333180, -83.025744));
+        final ArrayList<Location> locations = new ArrayList<>();
+        locations.add(new Location(getString(R.string.detroit_opera_house), getString(R.string.detroit_opera_house_details), getString(R.string.detroit_opera_house_address),
+                getString(R.string.detroit_opera_house_number), R.drawable.detroit_opera_house, 42.336586, -83.048849));
+        locations.add(new Location(getString(R.string.redford_theatre), getString(R.string.redford_theatre_details), getString(R.string.redford_theatre_address),
+                getString(R.string.redford_theatre_number), R.drawable.the_redford_theatre, 42.417406, -83.257208));
+        locations.add(new Location(getString(R.string.sound_board), getString(R.string.sound_board_details), getString(R.string.sound_board_address),
+                getString(R.string.sound_board_number), R.drawable.sound_board_theater, 42.339324, -83.067158));
+        locations.add(new Location(getString(R.string.masonic_temple), getString(R.string.masonic_temple_details), getString(R.string.masonic_temple_address),
+                getString(R.string.masonic_temple_number), R.drawable.masonic_temple_theater, 42.341881, -83.059797));
+        locations.add(new Location(getString(R.string.repertory_theatre), getString(R.string.repertory_theatre_details), getString(R.string.repertory_theatre_address),
+                getString(R.string.repertory_theatre_number), R.drawable.detroit_repertory_theatre, 42.395135, -83.109813));
+        locations.add(new Location(getString(R.string.senate_theater), getString(R.string.senate_theater_details), getString(R.string.senate_theater_address),
+                getString(R.string.senate_theater_number), R.drawable.senate_theater, 42.331417, -83.122873));
+        locations.add(new Location(getString(R.string.fox_theatre), getString(R.string.fox_theatre_details), getString(R.string.fox_theatre_address),
+                getString(R.string.fox_theatre_number), R.drawable.fox_theatre, 42.338310, -83.052666));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
-        final ListView listView = (ListView)rootView.findViewById(R.id.list);
+        ListView listView = (ListView)rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

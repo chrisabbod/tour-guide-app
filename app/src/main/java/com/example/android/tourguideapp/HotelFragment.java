@@ -16,7 +16,7 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class RestaurantsFragment extends Fragment {
+public class HotelFragment extends Fragment {
     private static final String STRING_TITLE_KEY = "string_title_index";    //Key index used to pass location title to detail activity
     private static final String STRING_DETAILS_KEY = "string_details_index";
     private static final String STRING_ADDRESS_KEY = "string_address_index";
@@ -25,7 +25,7 @@ public class RestaurantsFragment extends Fragment {
     private static final String LATITUDE_KEY = "latitude_index";
     private static final String LONGITUDE_KEY = "longitude_index";
 
-    public RestaurantsFragment() {
+    public HotelFragment() {
         // Required empty public constructor
     }
 
@@ -36,25 +36,25 @@ public class RestaurantsFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
-        final ArrayList<Locations> locations = new ArrayList<>();
-        locations.add(new Locations(getString(R.string.giovanni), getString(R.string.giovanni_details), getString(R.string.giovanni_address),
-                getString(R.string.giovanni_number), R.drawable.giovanni_restaurant, 42.290216, -83.146264));
-        locations.add(new Locations(getString(R.string.chartreuse), getString(R.string.chartreuse_details), getString(R.string.chartreuse_address),
-                getString(R.string.chartreuse_number), R.drawable.chartreuse_restaurant, 42.360504, -83.066030));
-        locations.add(new Locations(getString(R.string.supino), getString(R.string.supino_details), getString(R.string.supino_address),
-                getString(R.string.supino_number), R.drawable.supino_pizzeria, 42.345365, -83.040249));
-        locations.add(new Locations(getString(R.string.selden_standard), getString(R.string.selden_standard_details), getString(R.string.selden_standard_address),
-                getString(R.string.selden_standard_number), R.drawable.selden_standard_restaurant, 42.347802, -83.064976));
-        locations.add(new Locations(getString(R.string.buddy_pizza), getString(R.string.buddy_pizza_details), getString(R.string.buddy_pizza_address),
-                getString(R.string.buddy_pizza_number), R.drawable.buddy_pizza, 42.418936, -83.064127));
-        locations.add(new Locations(getString(R.string.wright_company), getString(R.string.wright_company_details), getString(R.string.wright_company_address),
-                getString(R.string.wright_company_number), R.drawable.wright_and_company_restaurant, 42.335205, -83.049117));
-        locations.add(new Locations(getString(R.string.mudgies), getString(R.string.mudgies_details), getString(R.string.mudgies_address),
-                getString(R.string.mudgies_number), R.drawable.mudgies_restaurant, 42.329059, -83.062040));
-        locations.add(new Locations(getString(R.string.lafayette_coney_island), getString(R.string.lafayette_coney_island_details), getString(R.string.lafayette_coney_island_address),
-                getString(R.string.lafayette_coney_island_number), R.drawable.lafayette_coney_island, 42.331510, -83.048786));
-        locations.add(new Locations(getString(R.string.vicente), getString(R.string.vicente_details), getString(R.string.vicente_address),
-                getString(R.string.vicente_number), R.drawable.vicente_cuban_cuisine, 42.334626, -83.046835));
+        final ArrayList<Location> locations = new ArrayList<>();
+        locations.add(new Location(getString(R.string.aloft_hotel), getString(R.string.aloft_hotel_details), getString(R.string.aloft_hotel_address),
+                getString(R.string.aloft_hotel_number), R.drawable.aloft_detroit, 42.335616, -83.050527));
+        locations.add(new Location(getString(R.string.mgm_grand_hotel), getString(R.string.mgm_grand_hotel_details), getString(R.string.mgm_grand_hotel_address),
+                getString(R.string.mgm_grand_hotel_number), R.drawable.mgm_grand_hotel, 42.333070, -83.059559));
+        locations.add(new Location(getString(R.string.westin_hotel), getString(R.string.westin_hotel_details), getString(R.string.westin_hotel_address),
+                getString(R.string.westin_hotel_number), R.drawable.westin_book_cadillac, 42.331983, -83.050359));
+        locations.add(new Location(getString(R.string.inn_on_ferry_street), getString(R.string.inn_on_ferry_street_details), getString(R.string.inn_on_ferry_street_address),
+                getString(R.string.inn_on_ferry_street_number), R.drawable.inn_on_ferry_street, 42.361500, -83.065600));
+        locations.add(new Location(getString(R.string.crowne_plaza_hotel), getString(R.string.crowne_plaza_hotel_details), getString(R.string.crowne_plaza_hotel_address),
+                getString(R.string.crowne_plaza_hotel_number), R.drawable.crowne_plaza_hotel, 42.327908, -83.047800));
+        locations.add(new Location(getString(R.string.doubletree_suites), getString(R.string.doubletree_suites_details), getString(R.string.doubletree_suites_address),
+                getString(R.string.doubletree_suites_number), R.drawable.double_tree_suites, 42.329135, -83.052834));
+        locations.add(new Location(getString(R.string.holiday_inn), getString(R.string.holiday_inn_details), getString(R.string.holiday_inn_address),
+                getString(R.string.holiday_inn_number), R.drawable.holiday_inn_express, 42.331287, -83.050485));
+        locations.add(new Location(getString(R.string.red_roof_inn), getString(R.string.red_roof_inn_details), getString(R.string.red_roof_inn_address),
+                getString(R.string.red_roof_inn_number), R.drawable.red_roof_inn, 42.300151, -83.273806));
+        locations.add(new Location(getString(R.string.comfort_inn), getString(R.string.comfort_inn_details), getString(R.string.comfort_inn_address),
+                getString(R.string.comfort_inn_number), R.drawable.comfort_inn_greenfield, 42.307568, -83.231905));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
         final ListView listView = (ListView)rootView.findViewById(R.id.list);
@@ -77,5 +77,4 @@ public class RestaurantsFragment extends Fragment {
 
         return rootView;
     }
-
 }

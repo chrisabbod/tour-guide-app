@@ -10,9 +10,9 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class LocationAdapter extends ArrayAdapter<Locations> {
+public class LocationAdapter extends ArrayAdapter<Location> {
 
-    public LocationAdapter(Activity context, ArrayList<Locations> locations){
+    public LocationAdapter(Activity context, ArrayList<Location> locations){
         super(context, 0, locations);
     }
 
@@ -25,7 +25,7 @@ public class LocationAdapter extends ArrayAdapter<Locations> {
                     R.layout.list_item, parent, false);
         }
 
-        Locations currentLocation = getItem(position);
+        Location currentLocation = getItem(position);
 
         TextView textView = (TextView)listItemView.findViewById(R.id.title_text_view);
         textView.setText(currentLocation.getLocationName());

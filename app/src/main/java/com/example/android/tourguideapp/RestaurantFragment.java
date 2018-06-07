@@ -9,14 +9,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class TheatersFragment extends Fragment {
+public class RestaurantFragment extends Fragment {
     private static final String STRING_TITLE_KEY = "string_title_index";    //Key index used to pass location title to detail activity
     private static final String STRING_DETAILS_KEY = "string_details_index";
     private static final String STRING_ADDRESS_KEY = "string_address_index";
@@ -25,33 +25,39 @@ public class TheatersFragment extends Fragment {
     private static final String LATITUDE_KEY = "latitude_index";
     private static final String LONGITUDE_KEY = "longitude_index";
 
-    public TheatersFragment() {
+    public RestaurantFragment() {
         // Required empty public constructor
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.location_list, container, false);
 
-        final ArrayList<Locations> locations = new ArrayList<>();
-        locations.add(new Locations(getString(R.string.detroit_opera_house), getString(R.string.detroit_opera_house_details), getString(R.string.detroit_opera_house_address),
-                getString(R.string.detroit_opera_house_number), R.drawable.detroit_opera_house, 42.336586, -83.048849));
-        locations.add(new Locations(getString(R.string.redford_theatre), getString(R.string.redford_theatre_details), getString(R.string.redford_theatre_address),
-                getString(R.string.redford_theatre_number), R.drawable.the_redford_theatre, 42.417406, -83.257208));
-        locations.add(new Locations(getString(R.string.sound_board), getString(R.string.sound_board_details), getString(R.string.sound_board_address),
-                getString(R.string.sound_board_number), R.drawable.sound_board_theater, 42.339324, -83.067158));
-        locations.add(new Locations(getString(R.string.masonic_temple), getString(R.string.masonic_temple_details), getString(R.string.masonic_temple_address),
-                getString(R.string.masonic_temple_number), R.drawable.masonic_temple_theater, 42.341881, -83.059797));
-        locations.add(new Locations(getString(R.string.repertory_theatre), getString(R.string.repertory_theatre_details), getString(R.string.repertory_theatre_address),
-                getString(R.string.repertory_theatre_number), R.drawable.detroit_repertory_theatre, 42.395135, -83.109813));
-        locations.add(new Locations(getString(R.string.senate_theater), getString(R.string.senate_theater_details), getString(R.string.senate_theater_address),
-                getString(R.string.senate_theater_number), R.drawable.senate_theater, 42.331417, -83.122873));
-        locations.add(new Locations(getString(R.string.fox_theatre), getString(R.string.fox_theatre_details), getString(R.string.fox_theatre_address),
-                getString(R.string.fox_theatre_number), R.drawable.fox_theatre, 42.338310, -83.052666));
+        final ArrayList<Location> locations = new ArrayList<>();
+        locations.add(new Location(getString(R.string.giovanni), getString(R.string.giovanni_details), getString(R.string.giovanni_address),
+                getString(R.string.giovanni_number), R.drawable.giovanni_restaurant, 42.290216, -83.146264));
+        locations.add(new Location(getString(R.string.chartreuse), getString(R.string.chartreuse_details), getString(R.string.chartreuse_address),
+                getString(R.string.chartreuse_number), R.drawable.chartreuse_restaurant, 42.360504, -83.066030));
+        locations.add(new Location(getString(R.string.supino), getString(R.string.supino_details), getString(R.string.supino_address),
+                getString(R.string.supino_number), R.drawable.supino_pizzeria, 42.345365, -83.040249));
+        locations.add(new Location(getString(R.string.selden_standard), getString(R.string.selden_standard_details), getString(R.string.selden_standard_address),
+                getString(R.string.selden_standard_number), R.drawable.selden_standard_restaurant, 42.347802, -83.064976));
+        locations.add(new Location(getString(R.string.buddy_pizza), getString(R.string.buddy_pizza_details), getString(R.string.buddy_pizza_address),
+                getString(R.string.buddy_pizza_number), R.drawable.buddy_pizza, 42.418936, -83.064127));
+        locations.add(new Location(getString(R.string.wright_company), getString(R.string.wright_company_details), getString(R.string.wright_company_address),
+                getString(R.string.wright_company_number), R.drawable.wright_and_company_restaurant, 42.335205, -83.049117));
+        locations.add(new Location(getString(R.string.mudgies), getString(R.string.mudgies_details), getString(R.string.mudgies_address),
+                getString(R.string.mudgies_number), R.drawable.mudgies_restaurant, 42.329059, -83.062040));
+        locations.add(new Location(getString(R.string.lafayette_coney_island), getString(R.string.lafayette_coney_island_details), getString(R.string.lafayette_coney_island_address),
+                getString(R.string.lafayette_coney_island_number), R.drawable.lafayette_coney_island, 42.331510, -83.048786));
+        locations.add(new Location(getString(R.string.vicente), getString(R.string.vicente_details), getString(R.string.vicente_address),
+                getString(R.string.vicente_number), R.drawable.vicente_cuban_cuisine, 42.334626, -83.046835));
 
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);
-        ListView listView = (ListView)rootView.findViewById(R.id.list);
+        final ListView listView = (ListView)rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
